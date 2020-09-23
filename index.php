@@ -12,15 +12,17 @@
     <title>Burger House - Fast Food & Restaurant Landing page</title>
 
     <!-- Stylesheets -->
-    <link href="assets/css/plugins/bootstrap.min.css" type="text/css" rel="stylesheet" media="all" />
-    <link href="assets/css/plugins/aos.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/plugins/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/plugins/bootstrap-datetimepicker.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/plugins/touch-sideswipe.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/bootstrap-datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/bootstrap-datetimepicker.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins/touch-sideswipe.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Icon Fonts -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 
     <!-- Favicon -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
@@ -57,7 +59,7 @@
         <nav class="navbar fixed-top">
             <div id="navbar_content">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+                    <a class="navbar-brand custom-primary" href="#"><img src="assets/img/logo.png" alt="logo" /> Burger House</a>
                     <a href="#cd-nav" class="cd-nav-trigger right_menu_icon">
                         <span><i class="fa fa-bars" aria-hidden="true"></i></span>
                     </a>
@@ -81,28 +83,49 @@
     </header>
     <!-- Header End -->
 
-    <!-- Banner Start -->
+        <!-- Banner Start -->
     <div class="banner">
-        <div class="banner-inner">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="banner-subtitle">
-                        <h3>It is a good time for the great taste of burgers</h3>
-                    </div>
-                    <h1 class="banner-title">Special <span>Burger</span></h1>
+        <div class="banner-slider">
+            <div class="banner-slider__item">
+                <div class="banner-slider__text custom-primary">
+                    <h3 class="banner-subtitle" data-aos="fade-up">It is a good time for the great taste of burgers</h3>
+                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Special <span>Burger</span></h1>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                    <img src="" alt="" class="banner-image" />
-                    <div class="banner-badge">
+                <div class="banner-slider__media">
+                    <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" />
+                    <div class="banner-badge" data-aos="fade-right">
+                        <div class="banner-price">20% <span>Off</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slider__item">
+                <div class="banner-slider__text custom-primary">
+                    <h3 class="banner-subtitle" data-aos="fade-up">It is a good time for the great taste of burgers</h3>
+                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Special <span>Burger</span></h1>
+                </div>
+                <div class="banner-slider__media">
+                    <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" />
+                    <div class="banner-badge" data-aos="fade-right">
+                        <div class="banner-price">20% <span>Off</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slider__item">
+                <div class="banner-slider__text custom-primary">
+                    <h3 class="banner-subtitle" data-aos="fade-up">It is a good time for the great taste of burgers</h3>
+                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Special <span>Burger</span></h1>
+                </div>
+                <div class="banner-slider__media">
+                    <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" />
+                    <div class="banner-badge" data-aos="fade-right">
                         <div class="banner-price">20% <span>Off</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Banner End -->
-
-
+    <!-- Banner End --> 
+    
     <!-- Reservation Start -->
     <div class="fixed_layer section" id="reservation">
         <div class="fixed_layer_padd container">
@@ -190,9 +213,9 @@
     <!-- JavaScripts -->
     <script src="assets/js/plugins/jquery-2.1.1.min.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
     <script src="assets/js/plugins/jquery.mousewheel.min.js"></script>
     <script src="assets/js/plugins/jquery.easing.min.js"></script>
-    <script src="assets/js/plugins/scrolling-nav.js"></script>
     <script src="assets/js/plugins/aos.js"></script>
     <script src="assets/js/plugins/jquery.touchSwipe.min.js"></script>
     <script src="assets/js/plugins/moment.js"></script>
