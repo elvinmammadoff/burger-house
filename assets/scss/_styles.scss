@@ -19,8 +19,6 @@ Version: 1.0.0
  2. Header
  3. Footer
  4. Banner
- 4.1. Image Banner
- 4.2. Carousel Banner
  5. Shortcodes
  6.0. Call to action
  6.1. Testimonials   
@@ -103,6 +101,11 @@ img {
 .d-flex {
     display: flex;
 }
+.d-flex-cnt-btwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .d-block {
     display: block;
 }
@@ -124,7 +127,6 @@ h6 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
     line-height: 28px;
-    color: #1D2228;
 }
 a,
 button {
@@ -133,6 +135,9 @@ button {
 a:hover,
 a:focus {
     text-decoration: none;
+}
+a:focus {
+    color: none;
 }
 b,
 strong {
@@ -237,10 +242,16 @@ textarea {
 ====================*/
 
 .custom-primary {
-    color: #ED4E53;
+    color: #3d2514;
+    &:hover {
+        color: #3d2514;
+    }
 }
 .custom-secondary{
-    color: #4e4e4e;
+    color: #ffc045;
+    &:focus {
+        color: #ffc045;
+    }
 }
 
 /*======================
@@ -309,6 +320,19 @@ table td {
 }
 .navbar-brand {
     padding: 0;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    font-weight: bold;
+    img {
+        margin-right: 10px;
+        &::selection {
+            background: none;
+        }
+    }
+    &::selection {
+        background: none;
+    }
 }
 .navbar-collapse.collapse {
     display: flex;
@@ -360,9 +384,96 @@ table td {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    &-inner {
-        padding-top: 135px;
+    &-slider {
+        height: 100%; 
+        &__item {
+            padding: 0 50px;
+            @include flexCenterBetween;
+        }
+        &__text {
+            width: 50%;
+            padding-right: 30px;
+        }
+        &__media {
+            position: relative;
+            width: 50%;
+            @include flexColumn;
+            align-items: flex-end;
+        }
+        .slick-dots {
+            display: none!important;
+            li {
+                button {
+                    &:before {
+                        background-color: #fff;
+                    }
+                }
+                &:hover,
+                &.slick-active { 
+                    button { 
+                        &:before {
+                            background-color: red;
+                        }
+                    }
+                } 
+            }    
+        }
+        &.slick-dotted.slick-slider {  
+            margin-bottom: 0;
+            opacity: 1; 
+        } 
+    }
+    &-subtitle {
+        font-size: 24px;
+        padding: 10px 14px 6px;
+        border: 2px dashed $primary-color;
+        display: inline-block;
+        line-height: normal;
+        border-radius: 3px;
+        margin-bottom: 30px;
+    }
+    &-title {
+        font-size: 114px;
+        font-family: "Alfa Slab One";
+        @include flexColumn;
+        line-height: 90px;
+        text-shadow: 3px 3px #fee7ba;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        span {
+            font-size: 56px;
+        }
+    }
+    &-badge {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        width: 174px;
+        min-width: 174px;
+        height: 174px;
+        object-fit: cover;
+        background-color: #bf2222;
+        border-radius: 50%;
+        padding: 10px;
+        @include flexAlignCenter;
+    }
+    &-price {
+        font-size: 70px;
+        color: #fff;
+        font-weight: 700;
+        font-family: "Bebas Neue";
+        text-transform: uppercase;
+        width: 100%;
         height: 100%;
+        line-height: normal;
+        transform: rotate(20deg);
+        border-radius: 50%;
+        border: 2px dashed #fff;
+        padding: 10px;
+        @include flexColumnCenter;
+        span {
+            font-size: 33px;
+        }
     }
 }
 

@@ -10,11 +10,11 @@
 
     [ INDEX ]
 	|
-    |___ Touch Swipe mobile menu
+    |___ Mobile Menu
     |___ Loading overlay
 	|___ AOS Animate
 	|___ Datepicker
-	|___ ScrollUp
+	|___ Scroll Up
 	|___
     |
 	[END INDEX ]
@@ -22,12 +22,11 @@
 ================================================================================*/
 
 
-"use strict";
+(function ($) {
+    "use strict";
 
-$(document).ready(function() {
 
-    //======= START Touch Swipe mobile menu ========
-
+    //======= Mobile Menu Start ========
     //open left menu clicking the left menu icon
     $('.left_menu_icon').on('click', function(event){
         event.preventDefault();
@@ -48,6 +47,7 @@ $(document).ready(function() {
         toggleRightNav(false);
         $("body").css({'overflow':'auto'});
     });
+
     //select a new section
     $('.cd-nav li').on('click', function(){
 
@@ -56,42 +56,47 @@ $(document).ready(function() {
     function toggleLeftNav(bool) {
         $('.left_menu, .cd-overlay').toggleClass('is-visible', bool);
         $('main').toggleClass('scale-down', bool);
-    }
+    };
 
     function toggleRightNav(bool) {
         $('.right_menu, .cd-overlay').toggleClass('is-visible', bool);
         $('main').toggleClass('scale-down', bool);
-    }
+    };
+    //======= Mobile Menu End ========
 
-    //======= END Touch Swipe mobile menu ========
 
-
-    //======= START Loading overlay ========
-
+    //======= Loading Overlay Start ========
     $(window).on('load', function () {
         $('.loading-overlay').fadeOut(100);
     });
-
-    //======= END Loading overlay ========
-
+    //======= Loading Overlay End ========
 
 
-    //======= START AOS Animate ========
-
-    // Init AOS Animate On Scroll Library
+    //======= AOS Animate Start ========
     AOS.init({
         duration: 1200,
         startEvent: 'DOMContentLoaded',
         once: true,
     });
-
-    //======= END AOS Animate ========
-
-});
+    //======= AOS Animate End ========
 
 
-    //======= START Datepicker ========
+    //======= Banner Slider Start ========
+    $('.banner-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true, 
+        speed: 500,
+        fade: false,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false, 
+    });
+    //======= Banner Slider End ========
 
+
+    //======= Datepicker Start ========
     $(document).ready(function() {
         $('#reserv_date').datepicker();
     });
@@ -101,12 +106,10 @@ $(document).ready(function() {
             format: 'LT'
         });
     });
+    //======= Datepicker End ========
 
-    //======= END Datepicker ========
 
-
-    //======= START ScrollUp ========
-
+    //======= Scroll Up Start ========
 	$(document).on( 'scroll', function(){
 		if ($(window).scrollTop() > 400) {
 			$('.scroll-up').addClass('show');
@@ -124,5 +127,6 @@ $(document).ready(function() {
 		offsetTop = offset.top;
 		$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
     }
+    //======= Scroll Up End ========
 
-    //======= END ScrollUp ========
+})(jQuery);

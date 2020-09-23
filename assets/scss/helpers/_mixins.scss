@@ -278,7 +278,7 @@
 
 // Horizontal and Vertical Flex Mixin
 @mixin flexCenterBetween() {
-    display: flex;
+    display: flex!important;
     align-items: center;
     justify-content: space-between;
 }

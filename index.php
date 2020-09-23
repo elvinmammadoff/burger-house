@@ -36,7 +36,6 @@
 
 </head>
 
-<!-- BEGIN body -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   
     <!-- Loading Overlay Start -->  
@@ -53,164 +52,142 @@
 
               
 
-<!-- Header Start -->
-<header id="header">
-    <nav class="navbar fixed-top">
-        <div id="navbar_content">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" /></a>
-                <a href="#cd-nav" class="cd-nav-trigger right_menu_icon">
-                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-                <div class="navbar-right">
-                    <div class="call-delivery">
-                        <img src="" alt="" class="call-delivery-icon" />
-                        <span class="call-delivery-number">Call for Delivery <a href=""></a></span>
+    <!-- Header Start -->
+    <header id="header">
+        <nav class="navbar fixed-top">
+            <div id="navbar_content">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+                    <a href="#cd-nav" class="cd-nav-trigger right_menu_icon">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-right">
+                        <div class="call-delivery">
+                            <img src="" alt="" class="call-delivery-icon" />
+                            <span class="call-delivery-number">Call for Delivery <a href=""></a></span>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a class="page-scroll" href="#header">Home</a></li>
+                            <li><a class="page-scroll" href="#reservation">Menu</a></li>
+                            <li><a class="page-scroll" href="#events">Events</a></li>
+                            <li><a class="page-scroll" href="#footer">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li><a class="page-scroll" href="#header">Home</a></li>
-                        <li><a class="page-scroll" href="#reservation">Menu</a></li>
-                        <li><a class="page-scroll" href="#events">Events</a></li>
-                        <li><a class="page-scroll" href="#footer">Contact Us</a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
-<!-- Header End -->
+        </nav>
+    </header>
+    <!-- Header End -->
 
-<!-- Banner Start -->
-<div class="banner">
-    <div class="banner-inner">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6">
-                <div class="banner-subtitle">
-                    <h3>It is a good time for the great taste of burgers</h3>
+    <!-- Banner Start -->
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="banner-subtitle">
+                        <h3>It is a good time for the great taste of burgers</h3>
+                    </div>
+                    <h1 class="banner-title">Special <span>Burger</span></h1>
                 </div>
-                <h1 class="banner-title">Special <span>Burger</span></h1>
-            </div>
-            <div class="col-xl-6 col-lg-6">
-                <img src="" alt="" class="banner-image" />
-                <div class="banner-badge">
-                    <div class="banner-price">20% <span>Off</span></div>
+                <div class="col-xl-6 col-lg-6">
+                    <img src="" alt="" class="banner-image" />
+                    <div class="banner-badge">
+                        <div class="banner-price">20% <span>Off</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Banner End -->
+    <!-- Banner End -->
 
-<!--    Reservation    -->
 
-<div class="fixed_layer section" id="reservation">
-    <div class="fixed_layer_padd container">
-        <div class="row">
-            <div class="col-md-offset-6 col-md-6" data-aos="fade-down">
-                <div class="reserv_box">
-                    <h1 class="section-title">online reservation</h1>
-                    <p class="short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <form id="reserv_form" method="post">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group form_pos">
-                                    <input type="text" name="name" autocomplete="off" required=""
-                                        placeholder="Your name" class="form-control"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Your name'" />
-                                    <span class="form_icon"></span>
+    <!-- Reservation Start -->
+    <div class="fixed_layer section" id="reservation">
+        <div class="fixed_layer_padd container">
+            <div class="row">
+                <div class="col-md-offset-6 col-md-6" data-aos="fade-down">
+                    <div class="reserv_box">
+                        <h1 class="section-title">online reservation</h1>
+                        <p class="short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <form id="reserv_form" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group form_pos">
+                                        <input type="text" name="name" required="" placeholder="Your name" class="form-control" />
+                                        <span class="form_icon"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group form_pos">
+                                        <input type="email" name="email" required="" placeholder="Your email" class="form-control" />
+                                        <span class="form_icon"></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group form_pos">
-                                    <input type="email" name="email" autocomplete="off" required=""
-                                        placeholder="Your email" class="form-control"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Your email'" />
-                                    <span class="form_icon"></span>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group form_pos">
+                                        <input type="text" name="phone" required="" placeholder="Phone" class="form-control" />
+                                        <span class="form_icon"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group form_pos">
+                                        <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" />
+                                        <span class="form_icon"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group form_pos">
+                                        <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" />
+                                        <span class="form_icon"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group form_pos">
-                                    <input type="text" name="phone" autocomplete="off" required=""
-                                        placeholder="Phone" class="form-control" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Phone'" />
-                                    <span class="form_icon"></span>
-                                </div>
+                            <div class="form-group">
+                                <textarea rows="3" name="message" placeholder="Message" class="form-control"></textarea>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="form-group form_pos">
-                                    <input type="text" name="date" autocomplete="off" required=""
-                                        placeholder="Date" class="form-control" id="reserv_date"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'" />
-                                    <span class="form_icon"></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group form_pos">
-                                    <input type="text" name="time" autocomplete="off" required=""
-                                        placeholder="Time" class="form-control" id="reserv_time"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'" />
-                                    <span class="form_icon"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="3" name="message" placeholder="Message" class="form-control"
-                                onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Message'"></textarea>
-                        </div>
-                        <input type="submit" name="send" value="book now" class="btn btn-block" />
-                    </form>
+                            <input type="submit" name="send" value="book now" class="btn btn-block" />
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- Reservation End -->
 
-<!-- Start .scroll-up -->
-<div class="scroll-up">
+    <!-- Scroll Up Start -->
+    <div class="scroll-up">
         <div class="scroll-up__icon"><i class="fa fa-arrow-up"></i></div>
-    </div><!-- End /.scroll-up -->        
-
-    <!--  Begin Footer  -->
-    <footer id="footer">
-
-        <!--    Contact    -->
-
-    </footer>
-
-    <!-- End Footer -->
-
-</div>
-<!-- END body-wrapper -->
-<!-- START mobile right burger menu -->
-
-<nav class="cd-nav-container right_menu" id="cd-nav">
-    <div class="header__open_menu">
-        <a href="index.html" class="rmenu_logo" title="yagmurmebel.az"><img src="assets/img/logo.png"
-                alt="logo" /></a>
     </div>
-    <ul class="rmenu_list">
-        <li><a class="page-scroll" href="#header">Home</a></li>
-        <li><a class="page-scroll" href="#reservation">Reservation</a></li>
-        <li><a class="page-scroll" href="#footer">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Scroll Up End -->        
 
-<div class="cd-overlay"></div>
-<!-- /.cd-overlay -->
+    <!-- Footer Start -->
+    <footer id="footer">
+    
+    </footer>
+    <!-- Footer End -->
 
-
-<!-- END mobile right burger menu --> 
+        <!-- Mobile Menu Start -->
+    <nav class="cd-nav-container right_menu" id="cd-nav">
+        <div class="header__open_menu">
+            <a href="/" class="rmenu_logo" title="">
+                <img src="assets/img/logo.png" alt="logo" />
+            </a>
+        </div>
+        <ul class="rmenu_list">
+            <li><a class="page-scroll" href="#header">Home</a></li>
+            <li><a class="page-scroll" href="#reservation">Reservation</a></li>
+            <li><a class="page-scroll" href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cd-overlay"></div>
+    <!-- Mobile Menu End --> 
     
 
-    <!-- JavaScript -->
+    <!-- JavaScripts -->
     <script src="assets/js/plugins/jquery-2.1.1.min.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.mousewheel.min.js"></script>
@@ -225,4 +202,4 @@
 
 </body>
 
-</html> 
+</html>  
