@@ -11,8 +11,10 @@
     [ INDEX ]
 	|
     |___ Mobile Menu
-    |___ Loading overlay
-	|___ AOS Animate
+    |___ Loading Overlay
+    |___ AOS Animate
+    |___ Banner Slider
+    |___ Affix Navbar
 	|___ Datepicker
 	|___ Scroll Up
 	|___
@@ -94,6 +96,18 @@
         pauseOnFocus: false, 
     });
     //======= Banner Slider End ========
+
+
+    //======= Affix Navbar Start ========
+    $(window).on('scroll', function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 60) {
+            $('.navbar').addClass('affix');
+        } else{
+            $('.navbar').removeClass('affix');
+        }
+    });
+    //======= Affix Navbar End ========
 
 
     //======= Datepicker Start ========

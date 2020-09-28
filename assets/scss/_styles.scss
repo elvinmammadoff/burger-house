@@ -19,6 +19,7 @@ Version: 1.0.0
  2. Header
  3. Footer
  4. Banner
+ 4.1. Banner Grid
  5. Shortcodes
  6.0. Call to action
  6.1. Testimonials   
@@ -34,8 +35,26 @@ Version: 1.0.0
 ===========================*/
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/*======================
+0. Keyframes
+========================*/
+
+@keyframes shake {
+    from {
+        transform: translate3d(1px, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(4px, 0, 0);
+    }
+}
 
 /*======================
 1.0. General
@@ -308,13 +327,37 @@ table td {
 2. Header
 ========================*/
 .navbar {
-    height: 135px;
-    padding: 0 50px 0 60px;
+    height: 136px;
+    padding: 33px 50px 0 60px;
+    transition: background-image 0.2s ease, box-shadow 0.2s ease, padding 0.3s linear;
+    .call-delivery {
+        margin-bottom: 25px;
+        @include flexCenterJustifyEnd;
+        &-icon {
+            margin-right: 15px;
+            animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) infinite;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 5000px;
+        }
+        &-number {
+            font-size: 17px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            a {
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+    &.affix {
+        padding-top: 0;
+        background-image: url(../img/banner/bg.png);
+        box-shadow: 1px 0 10px rgba(0,0,0,0.1);
+    }
 }
 #navbar_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
+    @include flexJustifyBetween;
     width: 100%;
 }
 .navbar-brand {
@@ -334,9 +377,7 @@ table td {
     }
 }
 .navbar-collapse.collapse {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include flexCenterJustifyEnd;
 }
 .navbar-right {
     text-align: right;
@@ -346,6 +387,8 @@ table td {
     & > li {
         & > a {
             font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 4px;
             line-height: 30px;
             text-transform: uppercase;
             margin-left: 50px;
@@ -424,7 +467,7 @@ table td {
     }
     &-subtitle {
         font-size: 24px;
-        padding: 10px 14px 6px;
+        padding: 12px 18px 8px;
         border: 2px dashed $primary-color;
         display: inline-block;
         line-height: normal;
@@ -436,7 +479,7 @@ table td {
         font-family: 'Alfa Slab One', sans-serif;
         @include flexColumn;
         line-height: 90px;
-        text-shadow: 3px 3px #fee7ba;
+        text-shadow: 4px 5px #fee7ba;
         text-transform: uppercase;
         letter-spacing: 5px;
         span {
@@ -473,6 +516,22 @@ table td {
         span {
             font-size: 33px;
         }
+    }
+}
+
+/* 4.1. Banner Grid */
+.banner-grid {
+    padding: 40px 80px;
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-column {
+        width: 50%;
+        padding: 35px 20px;
+    }
+    &-image {
+        width: 100%;
     }
 }
 

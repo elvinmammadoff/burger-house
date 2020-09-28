@@ -101,7 +101,7 @@
             <div class="banner-slider__item">
                 <div class="banner-slider__text custom-primary">
                     <h3 class="banner-subtitle" data-aos="fade-up">It is a good time for the great taste of burgers</h3>
-                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Special <span>Burger</span></h1>
+                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Speciall <span>Burger</span></h1>
                 </div>
                 <div class="banner-slider__media">
                     <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" />
@@ -113,10 +113,10 @@
             <div class="banner-slider__item">
                 <div class="banner-slider__text custom-primary">
                     <h3 class="banner-subtitle" data-aos="fade-up">It is a good time for the great taste of burgers</h3>
-                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Special <span>Burger</span></h1>
+                    <h1 class="banner-title" data-aos="fade-up" data-aos-duration="1800">Speciall <span>Burger</span></h1>
                 </div>
                 <div class="banner-slider__media">
-                    <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" />
+                    <img src="assets/img/banner/1.png" alt="" class="banner-image" data-aos="zoom-in" /> 
                     <div class="banner-badge" data-aos="fade-right">
                         <div class="banner-price">20% <span>Off</span></div>
                     </div>
