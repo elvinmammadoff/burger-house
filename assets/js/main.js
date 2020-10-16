@@ -82,6 +82,20 @@
     });
     //======= AOS Animate End ========
 
+    
+    //======= Page Scrolling Start ========
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function () {
+        $(document).on('click', 'a.page-scroll', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+    //======= Page Scrolling End ========
+
 
     //======= Banner Slider Start ========
     $('.banner-slider').slick({
@@ -94,8 +108,58 @@
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnFocus: false, 
+        pauseOnHover: false,
     });
     //======= Banner Slider End ========
+
+
+    //======= Menu Slider Start ========
+    $('#menu-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        autoplay: true,
+        draggable: true,
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        pauseOnHover:false,
+        responsive: [
+            {
+                breakpoint: 992,
+                 settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                 settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    //======= Menu Slider End ========
+
+
+    //======= Events Slider Start ========
+    $('.events').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+		autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false,
+        pauseOnHover:false,
+    });
+    //======= Events Slider End ========
 
 
     //======= Affix Navbar Start ========
@@ -117,10 +181,18 @@
 
     $(document).ready(function() {
         $('#reserv_time').datetimepicker({
-            format: 'LT'
+            format: 'LT',
         });
     });
     //======= Datepicker End ========
+
+
+    /* ==========================
+       Fancybox grab disabled
+    =============================*/ 
+    $("[data-fancybox]").fancybox({
+        touch: false
+    });
 
 
     //======= Scroll Up Start ========

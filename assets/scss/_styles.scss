@@ -76,7 +76,7 @@ html {
 .dark-overlay,
 .light-overlay {
     position: relative;
-    z-index: 1;
+    z-index: 6;
     &:before {
         content: '';
         position: absolute;
@@ -101,8 +101,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 28px;
     font-weight: 400;
-    color: #515151;
+    color: $primary-color;
     overflow-x: hidden;
+    text-rendering: geometricPrecision;
 }
 hr {
     margin: 15px 0;
@@ -131,6 +132,54 @@ img {
 .d-inline-block {
     display: inline-block;
 }
+.label {
+    padding: 14px 22px 8px;
+    background-color: $secondary-color;
+    display: inline-block;
+    color: $primary-color;
+}
+.button {
+    background-color: #BF2222;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 17px;
+    padding: 16px 40px;
+    line-height: normal;
+    display: inline-block;
+    transition: all .3s ease-out;
+    &:hover {
+        color: #fff;
+        background-color: $secondary-color;
+    }
+    &:focus {
+        color: #fff;
+    }
+}
+.section {
+    padding-top: 156px;
+}
+.instagram {
+    &:hover {
+        background-color: #e92452;
+    }
+}
+.facebook {
+    &:hover {
+        background-color: #1977f1;
+    }
+}
+.twitter {
+    &:hover {
+        background-color: #1da0f2;
+    }
+}
+.whatsapp {
+    &:hover {
+        background-color: #6ec069;
+    }
+}
 
 /*======================
 1.1. Typography
@@ -145,7 +194,7 @@ h6 {
     margin: 0 0 20px;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
-    line-height: 28px;
+    line-height: normal;
 }
 a,
 button {
@@ -180,15 +229,23 @@ strong {
 ========================*/
 
 .section {
-    margin-top: 85px;
-}
-.section-title {
-    font-size: 34px;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    color: #990100;
-    margin: 0 0 20px;
+    &-title {
+        font-size: 50px;
+        font-family: 'Alfa Slab One', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+    &-label {
+        font-size: 25px;
+        margin-bottom: 28px;
+    }
+    &-subtitle {
+        font-size: 17px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 .mb-20 {
     margin-bottom: 20px;
@@ -327,6 +384,8 @@ table td {
 2. Header
 ========================*/
 .navbar {
+    position: relative;
+    z-index: 2;
     height: 136px;
     padding: 33px 50px 0 60px;
     transition: background-image 0.2s ease, box-shadow 0.2s ease, padding 0.3s linear;
@@ -351,9 +410,16 @@ table td {
         }
     }
     &.affix {
+        position: fixed!important;
         padding-top: 0;
         background-image: url(../img/banner/bg.png);
         box-shadow: 1px 0 10px rgba(0,0,0,0.1);
+        &-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
     }
 }
 #navbar_content {
@@ -399,7 +465,7 @@ table td {
             &:focus,
             &:hover {
                 background-color: transparent;
-                color: #ffd630;
+                color: $primary-color;
             }
         }
         &.active {
@@ -414,13 +480,102 @@ table td {
 /*======================
 3. Footer
 ========================*/
+footer {
+    margin-top: 10px;
+    background-color: #212121;
+}
+.footer {
+    &-top {
+        padding-top: 84px;
+        padding-left: 43px;
+    }
+    &-logo {
+        display: flex;
+        align-items: flex-end;
+        span {
+            line-height: normal;
+            color: #fff;
+            font-size: 64px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: bold;
+            margin-left: 32px;
+        }
+    }
+    &-desc {
+        color: #fff;
+        font-size: 17px;
+        max-width: 30%;
+        margin-bottom: 0;
+        padding-top: 44px;
+    }
+    &-middle {
+        padding-left: 43px;
+        padding-right: 120px;
+        @include flexJustifyBetween;
+    }
+    &-contact {
+        padding-top: 44px;
+        &-item {
+            margin-top: 15px;
+            @include flexAlignCenter;
+        }
+        &-icon {
+            margin-right: 30px;
+        }
+        &-text {
+            font-size: 21px;
+            margin-top: 5px;
+            font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif;
+            color: #fff;
+            transition: all .3s ease-out;
+            &:hover {
+                color: $secondary-color;
+            }
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+    &-bottom {
+        padding-top: 150px;
+        padding-right: 30px;
+        padding-left: 43px;
+        @include flexCenterBetween;
+    }
+    &-copyright {
+        margin-bottom: 0;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+    &-social {
+        display: flex;
+        padding-bottom: 30px;
+        a {
+            width: 29px;
+            min-width: 29px;
+            height: 29px;
+            margin-left: 12px;
+            background-color: #fff;
+            color: #212121;
+            border-radius: 50%;
+            transition: all .3s ease-out;
+            @include flexCenter;
+            &:hover {
+                color: #fff;
+            }
+            &:focus {
+                color: #212121;
+            }
+        }
+    }
+}
 
 /*======================
 4. Banner
 ========================*/
-
 .banner {
-    height: 825px;
+    height: 100vh;
     padding-top: 135px;
     background-image: url(../img/banner/bg.png);
     background-repeat: no-repeat;
@@ -428,6 +583,7 @@ table td {
     background-size: cover;
     &-slider {
         height: 100%; 
+        @include flexAlignCenter;
         &__item {
             padding: 0 50px;
             @include flexCenterBetween;
@@ -470,7 +626,6 @@ table td {
         padding: 12px 18px 8px;
         border: 2px dashed $primary-color;
         display: inline-block;
-        line-height: normal;
         border-radius: 3px;
         margin-bottom: 30px;
     }
@@ -521,188 +676,241 @@ table td {
 
 /* 4.1. Banner Grid */
 .banner-grid {
-    padding: 40px 80px;
+    padding: 40px 80px 0;
     &-row {
         display: flex;
         flex-wrap: wrap;
     }
     &-column {
         width: 50%;
-        padding: 35px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     &-image {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform .3s ease-in-out;
     }
-}
-
-
-
-
-/*-----------------------------------------
-
-  3.5.  Reservation
-
-/*----------------------------------------*/
-
-.reserv_box {
-    background-color: #f6a525;
-    padding: 30px 40px;
-    .section-title {
-        text-align: left;
-        margin: 0;
-        font-size: 30px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+    &-big,
+    &-small {
+        display: block;
+        position: relative;
+        margin-top: 35px;
+        border-radius: 12px;
         overflow: hidden;
+        &:hover {
+            .banner-grid-image {
+                transform: scale(1.03);
+            }
+        }
     }
-    .short {
-        font-size: 15px;
-        text-align: left;
-        margin-top: 10px;
-        max-height: 42px;
-        overflow: hidden;
+    &-small {
+        @include flexColumn;
+        height: calc(50% - 35px);
+    }
+    &-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 25px;
+        z-index: 1;
+    }
+    &-subject {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    &-title {
+        font-size: 42px;
     }
 }
 
-#reserv_form .form-control {
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-width: 0 0 1px;
-    color: #fff;
-    border-color: inherit;
-    padding-left: 0;
+/*======================
+5. Shortcodes
+========================*/
+
+/* 5.1. Menu Slider */
+.menu-slider {
+    margin-top: 70px;
+    &-item {
+        text-align: center;
+        &-image {
+            height: 331px;
+            @include flexColumnCenter;
+            justify-content: flex-end;
+            margin-bottom: 18px;
+        }
+        &-burger {
+            max-height: calc(100% - 55px);
+        }
+        &-title {
+            font-size: 38px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        &-subtitle {
+            font-size: 17px;
+            line-height: 22px;
+            padding: 0 120px;
+            margin-bottom: 36px;
+        }
+    }
 }
 
-#reserv_form .form-control::-webkit-input-placeholder {
-    color: #fff;
+/* 5.2. Events */
+.events {
+    padding-left: 75px;
+    padding-right: 75px;
+    &-item {
+        display: flex!important;
+        flex-wrap: wrap;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 18px 24px 43px 0 rgba(0,0,0, .17);
+        &-image {
+            width: 50%;
+        }
+    }
+    .section {
+        &-header {
+            width: 50%;
+            padding: 60px 20px 60px 50px;
+        }
+        &-label {
+            font-size: 29px;
+            margin-bottom: -5px;
+            letter-spacing: 2px;
+        }
+        &-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        &-subtitle {
+            font-size: 21px;
+            line-height: 33px;
+            padding-left: 0;
+            color: #3d3d3d;
+        }
+    }
+    .slick {
+        &-list {
+            overflow: visible; 
+        }
+        &-dots {
+            bottom: 0;
+            text-align: left;
+            margin-left: 70px;
+            margin-bottom: 60px;
+            li {
+                button {
+                    width: 17px;
+                    min-width: 17px;
+                    height: 17px;
+                    background-color: #dcdcdc;
+                    border-radius: 50%;
+                    &::before {
+                        content: none;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
 }
 
-#reserv_form .form-control::-moz-placeholder {
-    color: #fff;
-}
-
-#reserv_form .form-control:-ms-input-placeholder {
-    color: #fff;
-}
-
-#reserv_form .form-control:-moz-placeholder {
-    color: #fff;
-}
-
-#reserv_form textarea.form-control {
-    resize: vertical;
-}
-
-#reserv_form .form-group {
-    margin: 15px 0;
-}
-
-#reserv_form {
-    margin-top: 30px;
-}
-
-#reserv_form .btn[type="submit"] {
-    background: none;
-    font-size: 21px;
-    text-transform: uppercase;
-    padding: 6px 10px;
-    margin-top: 50px;
-    border-radius: 0;
-    border: 1px solid #fff;
-}
-
-#reserv_form .btn[type="submit"]:hover {
-    background-color: #fff;
-    color: #f6a525;
-    transition: all .3s ease-out;
-}
-
-#reserv_form .timepicker a.btn,
-#reserv_form .timepicker td span {
-    color: #333;
-    padding: 0;
-}
-
-#reserv_form .table-condensed th,
-#reserv_form .table-condensed td {
-    padding: 0;
-}
-
-#reserv_form .bootstrap-datetimepicker-widget td span {
-    height: 20px;
-    line-height: 25px;
-    width: auto;
-}
-
-#reserv_form .bootstrap-datetimepicker-widget td,
-#reserv_form .bootstrap-datetimepicker-widget th {
-    height: 20px;
-    line-height: 25px;
-}
-
-#reserv_form .bootstrap-datetimepicker-widget {
-    width: 180px;
-}
-
-
-/*-----------------------------------------
-
-  5.  Fixed layer
-
-/*----------------------------------------*/
-
-.fixed_layer {
-    position: relative;
-    background-size: cover;
-    color: #fff;
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.fixed_layer:after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .65);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.fixed_layer_padd {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.fixed_layer_ttl {
-    font-size: 59px;
-    line-height: 115px;
-    text-transform: uppercase;
-}
-
-.fixed_layer_text {
-    font-size: 23px;
-    line-height: 42px;
-}
-
-
-
-/*---------------------------------------- 
-==========================================
-
-  6.  Footer
-
-==========================================
-/*----------------------------------------*/
-#footer > .section {
-    position: relative;
-    overflow: hidden;
-    padding-top: 0;
-    background-color: #990100;
+/* 5.3. Reservation */
+.reservation {
+    @include flexJustifyBetween;
+    &-left {
+        img {
+            margin-right: 0;
+            margin-left: auto;
+            display: block;
+            &:first-child {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: flex-end;
+    }
+    &-center {
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 150px;
+    }
+    &-form {
+        margin-top: 60px;
+        .form-control {
+            background: none;
+            box-shadow: none;
+            color: #3d3d3d;
+            border-color: #bebebe;
+            height: 65px;
+            font-size: 21px;
+            font-family: 'Bebas Neue', sans-serif;
+            &::-webkit-input-placeholder {
+                color: #3d3d3d;
+            }
+            &::-moz-placeholder {
+                color: #3d3d3d;
+            }
+            &:-ms-input-placeholder {
+                color: #3d3d3d;
+            }
+            &:-moz-placeholder {
+                color: #3d3d3d;
+            }
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .timepicker {
+            a.btn,
+            td span {
+                color: #333;
+                padding: 0;
+            }
+        }
+        .table-condensed {
+            th, td {
+                padding: 0;
+            }
+        }
+        .bootstrap-datetimepicker-widget {
+            width: 180px;
+            td span {
+                height: 20px;
+                line-height: 25px;
+                width: auto;
+            }
+            td, th {
+                height: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+    .section {
+        &-label {
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+    }
+    .button {
+        margin-top: 15px;
+        height: 65px;
+        border-radius: 4px;
+        width: 100%;
+    }
 }
 
 
@@ -851,7 +1059,7 @@ table td {
 
 .right_menu {
     right: 0;
-    transform: translateX(100%);
+    transform: translateX(110%);
 }
 
 .cd-nav-container {
@@ -944,7 +1152,7 @@ table td {
 .scroll-up {
     position: fixed;
     right: 50px;
-    bottom: 50px;
+    bottom: 100px;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
@@ -955,9 +1163,7 @@ table td {
     background-color: #c10100;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out
+    transition: all .3s ease-out;
 }
 
 .scroll-up:hover {
