@@ -27,13 +27,13 @@
               <div class="large-10 large-centered columns">
 
                   <div class="name">
-                      <h3>Butazzo Pizza</h3>
+                      <h3>Burger House</h3>
                       <p>Premium HTML Template Documentation</p>
                   </div>
 
                   <ul class="meta">
                       <li><strong>Author:</strong> <a href="https://themeforest.net/user/alissio" target="_blank">Alissio</a></li>
-                      <li><strong>Live Preview:</strong> <a href="https://butazzo-pizza.herokuapp.com/">View Demo</a></li>
+                      <li><strong>Live Preview:</strong> <a href="https://burger-house.herokuapp.com/">View Demo</a></li>
                       <li><strong>Support:</strong> <a href="mailto:elvinmammadoff@gmail.com">Ask a Question</a></li> 
                   </ul>
 
@@ -66,7 +66,7 @@
                           <li data-magellan-arrival="support-desk"><a href="#support-desk">Support Desk</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#files-resources">Files & Resources</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#php-file">PHP Code Explanation</a></li>
-                          <li data-magellan-arrival="files-resources"><a href="#google-map">Google Map Api</a></li>
+                          <li data-magellan-arrival="files-resources"><a href="#yandex-map">Yandex Map Api</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#updates">Regular Updates</a></li>
                       </ol>
 
@@ -79,7 +79,7 @@
                     <section id="introduction" class="section" data-magellan-destination="introduction">
                           
                           <h1>Howdy!</h1>
-                          <p class="lead">You are a shining owner of a regular license based on Butazzo Pizza Theme</p>
+                          <p class="lead">You are a shining owner of a regular license based on Burger House Theme</p>
                           <p>First of all, Thank you so much for purchasing this template and for being my loyal customer. You are entitled to get free updates to this product + exceptional support (as per market policy) from the author directly.</p>
                           <p>This documentation is to help you understand the template's structure. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge is required to customize this template.</p>
 
@@ -133,39 +133,38 @@
     </div>
     <!-- END Loading Section -->
   
-    <!-- BEGIN body wrapper -->
-      <div class="body-wrapper">
-  
-        <!-- Begin header-->
-        <header id="header"></header>
-        <!-- End header-->
-  
-        <!-- Begin Sections-->
-  
-        <!--    About Us    -->
-        <div class="container section" id="about_us"></div>
-  
-        <!--    Menus   -->
-        <div class="container section" id="menu"></div>
-  
-        <!--    Reservation    -->
-        <div class="fixed_layer section" id="reservation"></div>
-  
-        <!--    Gallery    -->
-        <div class="container section" id="gallery"></div>
-  
-        <!-- End Sections -->
-  
-        <!--  Begin Footer  -->
-        <footer></footer> 
-        <!-- End Footer -->
-  
-      </div>
-    <!-- END body-wrapper -->
+    <!-- Header Start -->
+    <header id="header"></header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <div id="banner" class="banner"></div>
+
+    <!-- Banner Grid Start -->
+    <div class="banner-grid"></div>
+
+    <!-- Menu Slider Start -->
+    <section class="section" id="menu"></section>
+
+    <!-- Events Start -->
+    <section class="section" id="events"></section>
+
+    <!-- Reservation Start -->
+    <section class="section" id="reservation"></section>  
+
+    <!--  Begin Footer  -->
+    <footer id="contact"></footer>
+    <!-- End Footer -->
+
+    <!-- Scroll Up Start -->
+    <div class="scroll-up"></div>
+
+    <!-- Yandex Map Start -->
+    <div class="popup popup--sign" id="map-popup" style="display: none;"></div>
     
-    <!-- START mobile right burger menu -->
+    <!-- Mobile Menu Start -->
     <nav class="cd-nav-container right_menu" id="cd-nav"></nav>
-  
+
     <div class="cd-overlay"></div><!-- /.cd-overlay -->
   
   </code>
@@ -183,13 +182,17 @@
 
                           <p><code>div class="loading-overlay"</code> shows a loading overlay on the whole page or over single DOM elements</p>
 
-                          <p><code>header id="header"</code> section contains the code for carousel, contact details, logo and primary navigation at top.</p>
+                          <p><code>div class="banner"</code> contains main slider</p>
 
-                          <p><code>div id="about_us"</code> <code>div id="menu"</code> <code>div id="reservation"</code> <code>div id="gallery"</code> section contains the page specific content as well as their details.</p>
+                          <p><code>div class="banner-grid"</code> contains the code for banner about discount or new campaigns</p>
 
-                          <p><code>site-footer</code> section typically remains the same. It consist of short about info, working days list, contact details, social icons and copyright text note also.</p>
+                          <p><code>section id="menu"</code> <code>section id="events"</code> <code>section id="reservation"</code> section contains the page specific content as well as their details.</p>
 
-                          <p>Further, skeleton shows two additional markup tags.<code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
+                          <p><code>footer id="contact"</code> section typically remains the same. It consist of short about info, contact details, social icons and copyright text note also.</p>
+
+                          <p>Further, skeleton shows two additional markup tags. <code>div class="scroll-up"</code> contains the code scroll to the top of the page. <code>div id="map-popup"</code>shows address location on the Yandex map and open when you click address link at the footer. <code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
+
+                          <p></p>
 
                     </section>
                     <section id="stylesheet-files" class="section" data-magellan-destination="stylesheet-files">
@@ -207,15 +210,11 @@
     |-- bootstrap.min.css
     |-- bootstrap-datepicker.css
     |-- bootstrap-datetimepicker.css
-    |-- bootstrap-theme.min.css
-    |-- fonts.css
-    |-- font-awesome.min.css
-    |-- main.css
-    |-- responsive.css
+    |-- all.min.css
+    |-- style.css
     |-- aos.css
     |-- slick.css
     |-- slick-theme.css
-    |-- scrolling-nav.css
     |-- jquery.fancybox.css
     |-- touch-sideswipe.css
   </code>
@@ -227,13 +226,10 @@
                           <code>bootstrap.min.css</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system.<br>
                           <code>bootstrap-datepicker.css</code> provides a flexible datepicker widget in the Bootstrap style.<br>
                           <code>bootstrap-datetimepicker.css</code> widget based on twitter bootstrap.<br>
-                          <code>fonts.css</code> import fonts to stylesheet.<br>
-                          <code>font-awesome.min.css</code> is iconic font and CSS toolkit.<br>
-                          <code>main.css</code> custom style file.<br> 
-                          <code>responsive.css</code> for responsive design.<br>      
-                          <code>aos.css</code> animate On scroll library.<br>     
+                          <code>all.min.css</code> is iconic FontAwesome font and CSS toolkit.<br>
+                          <code>style.css</code> custom style file.<br> 
+                          <code>aos.css</code> animate on scroll library.<br>     
                           <code>slick.css</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more.<br>                          
-                          <code>scrolling-nav.css</code> is a basic Bootstrap framework for creating smooth scrolling, one page websites <br>   
                           <code>jquery.fancybox.css</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br>
                           <code>touch-sideswipe.css</code> widget-library for mobile navbar (vanilla js and little bit pure css)                                        
                           </p>
@@ -263,9 +259,7 @@
     |-- jquery.mousewheel.min.js
     |-- jquery.touchSwipe.min.js
     |-- slick.min.js
-    |-- scrolling-nav.js
-    |-- loadMoreResults.js
-    |-- mapApiKey.js
+    |-- https://api-maps.yandex.ru/2.1/?apikey=...
   </code>
 </pre> 
                          
@@ -280,11 +274,9 @@
                           <code>main.js</code> contains all the custom programmed javascript coded specifically for this template<br> 
                           <code>aos.js</code> animate On scroll library<br />
                           <code>slick.min.js</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more<br>
-                          <code>scrolling-nav.js</code> is a basic Bootstrap framework for creating smooth scrolling, one page websites <br />   
                           <code>jquery.fancybox.js</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br />
                           <code>jquery.touchSwipe.min.js</code> widget-library for mobile navbar (vanilla js and little bit pure css) <br />
-                          <code>loadMoreResults.js</code> is a small jQuery plugin for adding a 'Load More' pagination button to your long web content that allows you to dynamically load more items according to your needs. <br />    
-                          <code>mapApiKey.js</code> to use the Maps Embed API you must have an API key. The API key is a unique identifier that is used to authenticate requests associated with your project for usage and billing purposes.                   
+                          <code>https://api-maps.yandex.ru/2.1/?apikey=...</code> to use the Yandex Maps Embed API you must have an API key. The API key is a unique identifier that is used to authenticate requests associated with your project for usage and billing purposes.                   
                         </p>
 
                     </section>
@@ -356,23 +348,21 @@
 
                           <ul>
                             <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-                            <li><a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap</a></li>
-                            <li><a href="http://gsgd.co.uk/splash/" target="_blank">Jquery Easing</a></li>
+                            <li><a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap v4.5</a></li>
+                            <li><a href="http://gsgd.co.uk/splash/" target="_blank">Jquery Easing v1.3</a></li>
                             <li><a href="https://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">Bootstrap Date/Time Picker</a></li>
                             <li><a href="https://bootstrap-datepicker.readthedocs.io/en/latest/" target="_blank">Bootstrap Date Picker</a></li>
                             <li><a href="https://michalsnik.github.io/aos/" target="_blank">Aos</a></li>
-                            <li><a href="http://fancybox.net/" target="_blank">Fancybox</a></li>
+                            <li><a href="https://fancyapps.com/fancybox/3/" target="_blank">Fancybox v3.5.7</a></li>
                             <li><a href="https://github.com/jquery/jquery-mousewheel" target="_blank">Jquery Mousewheel</a></li>
                             <li><a href="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin" target="_blank">Touch Swipe</a></li>
                             <li><a href="http://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a></li>
-                            <li><a href="https://startbootstrap.com/template-overviews/scrolling-nav/" target="_blank">Scrolling Nav</a></li>
-                            <li><a href="https://www.jqueryscript.net/loading/Load-More-Pagination-jQuery-loadMoreResults.html" target="_blank">loadMoreResults</a></li>
                             <li> <strong>Fonts used</strong>
                               <ul>
-                                <li><a href="https://www.fontsquirrel.com/fonts/chunkfive" target="_blank">ChunkFive Ex</a></li>
+                                <li><a href="https://fonts.google.com/specimen/Bebas+Neue" target="_blank">Bebas Neue</a></li>
                                 <li><a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a></li>
-                                <li><a href="https://fonts.google.com/specimen/Raleway" target="_blank">Raleway</a></li>
-                                <li><a href="https://fontawesome.com/v4.7.0/" target="_blank">Font Awesome</a></li>
+                                <li><a href="https://fonts.google.com/specimen/Alfa+Slab+One" target="_blank">Alfa Slab One</a></li>
+                                <li><a href="https://fontawesome.com/icons?d=gallery&v=5.14.0&m=free" target="_blank">Font Awesome v5.14.0</a></li>
                               </ul>
                             </li>
                           </ul>
@@ -389,13 +379,13 @@
 
                     </section>
 
-                    <section id="google-map" class="section" data-magellan-destination="google-map">
+                    <section id="yandex-map" class="section" data-magellan-destination="yandex-map">
                           
-                          <h1>8. Google Map Api</h1>
+                          <h1>8. Yandex Map Api</h1>
 
                           <br>
 
-                          <p>I've used Google Map Api to generate Google Map. You are able to change map style or marker from guidelines <a href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map" target="_blank">Google Map</a><p>
+                          <p>I've used Yandex Map Api to generate Yandex Map. You are able to change map style or marker from guidelines <a href="https://yandex.com/dev/maps/jsapi/doc/2.1/quick-start/index.html?from=techmapsmain" target="_blank">Yandex Map</a><p>
 
                     </section>
 
@@ -409,45 +399,13 @@
 
 <pre>   
   
-  V. 1.4.0 – 10.07.2020
-  - New Feature: Chef personal info can be added and shown on slider
-  - Fix: Google Map API key source
-  - Tweak: Improved Documentation
-
-  V. 1.3.0 – 03.05.2020
-  - New: Animate gallery load icon added for more button
-  - Fix: Go to top button work on footer
-  - Fix: Search input clear empty value
-  - Tweak: Improved Documentation
-    
-  V. 1.2.0 – 1.12.2019
-  - New: Scroll up button functionality added
-  - Fix: Header search clear button type
-  - Fix: Inputs type text autocomplete 
-  - Tweak: Improved Documentation
-
-  V. 1.1.1 – 30.09.2018
-  - Fix: Burger menu view on tablet devices
-  - Fix: Navbar fixed view 
-  - Tweak: Improved Documentation
-
-  V. 1.1.0 – 08.07.2018
-  - New: loadMoreResults plugin for gallery photos
-  - Fix: Slider responsive view to medium devices
-  - Added: Extra images for slider, menu and gallery sections
-  - Fix: Content of menu section  
-  - Tweak: Improved Documentation
-
-  V. 1.0.1 – 7.07.2018
-  - Tweak: Improved Fonts Loading Performance
-  
-  V. 1.0.0 – 2.06.2018
+  V. 1.0.0 – 20.01.2021
   - Initial release
 </pre>  
                     </section>
 
                     <footer>
-                      <p>© Butazzo Pizza Cafe and Restaurant HTML Template</p>
+                      <p>© Burger House Fast Food & Restaurant HTML Template</p>
                     </footer>
 
                 </div>

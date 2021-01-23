@@ -172,6 +172,9 @@
             }
         }
     }
+    .navbar-nav {
+        display: none;
+    }
     .dropdown-desktop {
         &:hover {
             .dropdown-menu {
@@ -281,6 +284,13 @@
         }
         .navbar {
             padding: 20px 0;
+        }
+    }
+    .banner {
+        &-grid {
+            &-column {
+                width: 100%;
+            }
         }
     }
 }

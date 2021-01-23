@@ -17,7 +17,9 @@
     |___ Affix Navbar
 	|___ Datepicker
 	|___ Scroll Up
-	|___
+    |___ Website Shaking on Scroll (specifically in Chrome)
+    |___ Yandex Map
+    |___ 
     |
 	[END INDEX ]
 
@@ -37,7 +39,7 @@
     });
     
     //open right menu clicking the right menu icon
-    $('.right_menu_icon').on('click', function(event){
+    $('.burger-menu-icon').on('click', function(event){
         event.preventDefault();
         toggleRightNav(true);
         $("body").css({'overflow':'hidden'});
@@ -61,7 +63,7 @@
     };
 
     function toggleRightNav(bool) {
-        $('.right_menu, .cd-overlay').toggleClass('is-visible', bool);
+        $('.burger-menu, .cd-overlay').toggleClass('is-visible', bool);
         $('main').toggleClass('scale-down', bool);
     };
     //======= Mobile Menu End ========
@@ -89,7 +91,7 @@
         $(document).on('click', 'a.page-scroll', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
+                scrollTop: $($anchor.attr('href')).offset().top + (-20)
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
@@ -118,7 +120,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        autoplay: true,
+        autoplay: false,
         draggable: true,
         dots: false,
         arrows: false,
@@ -126,7 +128,7 @@
         pauseOnHover:false,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1160,
                  settings: {
                     centerMode: true,
                     slidesToShow: 2,
@@ -134,11 +136,15 @@
                 }
             },
             {
+                breakpoint: 840,
+                 settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
                 breakpoint: 600,
                  settings: {
-                    centerMode: true,
                     slidesToShow: 1,
-                    slidesToScroll: 1,
                 }
             }
         ]
@@ -154,7 +160,7 @@
         speed: 500,
         fade: true,
         cssEase: 'linear',
-		autoplay: true,
+		autoplay: false,
         autoplaySpeed: 3000,
         pauseOnFocus: false,
         pauseOnHover:false,
@@ -214,5 +220,55 @@
 		$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
     }
     //======= Scroll Up End ========
+
+
+    //======= START Yandex Map ========
+
+    ymaps.ready(init);
+    var myMap, 
+        myPlacemark;
+
+    var iconBase = 'assets/img/map-marker.png';
+    
+    function init(){ 
+        myMap = new ymaps.Map("map", {
+            center: [41.065434, 28.964260],
+            zoom: 13,
+    });
+    
+    myPlacemark = new ymaps.Placemark([41.065434, 28.964260], { 
+        // hintContent: 'Moscow!', 
+        // balloonContent: 'Capital of Russia'
+    },{
+        iconLayout: 'default#image',
+        iconImageHref: 'assets/img/map-marker.png',
+        iconImageSize: [26, 40],
+    });
+        
+        myMap.geoObjects.add(myPlacemark);
+        // myMap.controls.remove('zoomControl');
+        myMap.controls.remove('rulerControl');
+        myMap.controls.remove('geolocationControl');
+        myMap.controls.remove('searchControl');
+        myMap.controls.remove('trafficControl');
+        myMap.controls.remove('typeSelector');
+        myMap.controls.remove('fullscreenControl');
+        myMap.behaviors.disable('scrollZoom');
+    }
+
+    //======= END Yandex Map ========
+
+
+    //======= Website Shaking on Scroll (specifically in Chrome) Start ========
+
+    window.addEventListener('touchmove', function (event) {
+        event.preventDefault()
+    }, false)
+  
+    document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+        event.stopPropagation()
+    }, false)
+    //======= Website Shaking on Scroll (specifically in Chrome) End ========
+
 
 })(jQuery);

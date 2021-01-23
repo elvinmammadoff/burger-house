@@ -74,6 +74,7 @@
                         <ul class="nav navbar-nav">
                             <li><a class="page-scroll" href="#header">Home</a></li>
                             <li><a class="page-scroll" href="#menu">Menu</a></li>
+                            <li><a class="page-scroll" href="#reservation">Reservation</a></li>
                             <li><a class="page-scroll" href="#events">Events</a></li>
                             <li><a class="page-scroll" href="#contact">Contact Us</a></li>
                         </ul>
@@ -84,7 +85,7 @@
     </header>
     <!-- Header End -->
 
-        <!-- Banner Start -->
+    <!-- Banner Start -->
     <div id="banner" class="banner">
         <div class="banner-slider">
             <div class="banner-slider__item">
@@ -126,7 +127,8 @@
         </div>
     </div>
     <!-- Banner End --> 
-        <!-- Banner Grid Start -->
+
+    <!-- Banner Grid Start -->
     <div class="banner-grid">
         <div class="banner-grid-row">
             <div class="banner-grid-column">
@@ -157,180 +159,183 @@
         </div>
     </div>
     <!-- Banner Grid End --> 
-    <section class="section" id="menu">
-    <div class="section-header text-center">
-        <h5 class="section-label label">Always Tasty Burger</h5>
-        <h2 class="section-title">Choose & Enjoy</h2>
-        <p class="section-subtitle text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
-            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-        </p>
-    </div>
-    
-    <div id="menu-slider" class="menu-slider">
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger1</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger2</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger3</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_3.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger4</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger5</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-        <div class="menu-slider-item">
-            <div class="menu-slider-item-image">
-                <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
-                <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
-            </div>
-            <div class="menu-slider-item-desc">
-                <h4 class="menu-slider-item-title">Hamburger6</h4>
-                <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <a href="#contact" class="page-scroll button">Order Now</a>
-            </div>
-        </div>
-    </div>
-</section> 
-    <section class="section" id="events">
-    <div class="events">
-        <div class="events-item">
-            <div class="section-header">
-                <h5 class="section-label">Always Tasty Burger</h5>
-                <h2 class="section-title">Choose & Enjoy</h2>
-                <p class="section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                </p>
-            </div>
-            <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
-        </div>
-        <div class="events-item">
-            <div class="section-header">
-                <h5 class="section-label">Always Tasty</h5>
-                <h2 class="section-title">Choose & Enjoy</h2>
-                <p class="section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                </p>
-            </div>
-            <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
-        </div>
-        <div class="events-item">
-            <div class="section-header">
-                <h5 class="section-label">Always</h5>
-                <h2 class="section-title">Choose & Enjoy</h2>
-                <p class="section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                </p>
-            </div>
-            <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
-        </div>
-    </div>
-</section> 
-    <div class="section" id="contact">
-    <div class="reservation">
-        <div class="reservation-left">
-            <img src="assets/img/reservation/burger.png" alt="" />
-            <img src="assets/img/reservation/bottle.png" alt="" />
-        </div>
-        <div class="reservation-center">
-            <div class="section-header text-center">
-                <h5 class="section-label">Reservation</h5>
-                <h2 class="section-title">Book Your Table</h2>
-            </div>
-            <form class="reservation-form" method="post">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group form_pos">
-                            <input type="text" name="name" required="" placeholder="Name" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group form_pos">
-                            <input type="email" name="email" required="" placeholder="Email" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group form_pos">
-                            <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group form_pos">
-                            <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group form_pos">
-                            <input type="number" name="people" required="" placeholder="People" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <button type="submit" class="button">Find a table</button>
-                    </div>
-                </div> 
-            </form>
-        </div>
-        <div class="reservation-right">
-            <img src="assets/img/reservation/burger-food.png" alt="" />
-        </div>
-    </div>
-</div> 
 
-    <!-- Scroll Up Start -->
-    <div class="scroll-up">
-        <div class="scroll-up__icon"><i class="fa fa-arrow-up"></i></div>
-    </div>
-    <!-- Scroll Up End -->        
+    <!-- Menu Slider Start -->
+    <section class="section" id="menu">
+        <div class="section-header text-center">
+            <h5 class="section-label label">Always Tasty Burger</h5>
+            <h2 class="section-title">Choose & Enjoy</h2>
+            <p class="section-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+            </p>
+        </div>
+    
+        <div id="menu-slider" class="menu-slider">
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger1</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger2</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger3</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_3.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger4</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger5</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+            <div class="menu-slider-item">
+                <div class="menu-slider-item-image">
+                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
+                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                </div>
+                <div class="menu-slider-item-desc">
+                    <h4 class="menu-slider-item-title">Hamburger6</h4>
+                    <p class="menu-slider-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <a href="#contact" class="page-scroll button">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Menu Slider End -->
+
+    <!-- Events Start -->
+    <section class="section" id="events">
+        <div class="events">
+            <div class="events-item">
+                <div class="section-header">
+                    <h5 class="section-label">Always Tasty Burger</h5>
+                    <h2 class="section-title">Choose & Enjoy</h2>
+                    <p class="section-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </div>
+                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+            </div>
+            <div class="events-item">
+                <div class="section-header">
+                    <h5 class="section-label">Always Tasty</h5>
+                    <h2 class="section-title">Choose & Enjoy</h2>
+                    <p class="section-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </div>
+                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+            </div>
+            <div class="events-item">
+                <div class="section-header">
+                    <h5 class="section-label">Always</h5>
+                    <h2 class="section-title">Choose & Enjoy</h2>
+                    <p class="section-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </div>
+                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+            </div>
+        </div>
+    </section> 
+    <!-- Events End -->
+
+    <!-- Reservation Start -->
+    <section class="section" id="reservation">
+        <div class="reservation">
+            <div class="reservation-left">
+                <img src="assets/img/reservation/burger.png" alt="" />
+                <img src="assets/img/reservation/bottle.png" alt="" />
+            </div>
+            <div class="reservation-center">
+                <div class="section-header text-center">
+                    <h5 class="section-label">Reservation</h5>
+                    <h2 class="section-title">Book Your Table</h2>
+                </div>
+                <form class="reservation-form" method="post">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group form_pos">
+                                <input type="text" name="name" required="" placeholder="Name" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form_pos">
+                                <input type="email" name="email" required="" placeholder="Email" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form_pos">
+                                <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form_pos">
+                                <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form_pos">
+                                <input type="number" name="people" required="" placeholder="People" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="button">Find a table</button>
+                        </div>
+                    </div> 
+                </form>
+            </div>
+            <div class="reservation-right">
+                <img src="assets/img/reservation/burger-food.png" alt="" />
+            </div>
+        </div>
+    </section> 
+    <!-- Reservation End -->      
 
     <!-- Footer Start -->
-    <footer id="footer">
+    <footer id="contact">
         <div class="footer-top">
             <div class="footer-logo">
                 <img src="assets/img/logo-footer.png" alt="" />
@@ -342,7 +347,7 @@
             <div class="footer-contact">
                 <div class="footer-contact-item">
                     <img src="assets/img/icons/location.svg" alt="" class="footer-contact-icon" />
-                    <a class="footer-contact-text" data-fancybox="" data-src="#map-popup" onclick="$.fancybox.close()" href="javascript:;">Main Road, Building Name, Country</a>
+                    <a class="footer-contact-text" data-fancybox="" data-src="#map-popup" onclick="$.fancybox.close()" href="javascript:;">Büyükdere Cad., 22A, Istanbul, Turkey</a>
                 </div>
                 <div class="footer-contact-item">
                     <img src="assets/img/icons/email.svg" alt="" class="footer-contact-icon" />
@@ -351,7 +356,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copyright">© Company Name 2020. All rights reserved.</p>
+            <p class="footer-copyright">© Company Name 2021. All rights reserved.</p>
             <div class="footer-social">
                 <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
                 <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -362,16 +367,24 @@
     </footer>
     <!-- Footer End -->
 
-    
-<div class="popup popup--sign" id="map-popup" style="display: none;">
-    <div class="popup-header">
-        <h2 class="popup-title upper">Main Road, Building Name, Country</h2>
+    <!-- Scroll Up Start -->
+    <div class="scroll-up">
+        <div class="scroll-up__icon"><i class="fa fa-arrow-up"></i></div>
     </div>
-    <div class="popup-main">
-        
-    </div>
-</div>  
-        <!-- Mobile Menu Start -->
+    <!-- Scroll Up End -->  
+
+    <!-- Yandex Map Start -->
+    <div class="popup popup--sign" id="map-popup" style="display: none;">
+        <div class="popup-header">
+            <h2 class="popup-title upper">Büyükdere Cad., 22A, Istanbul, Turkey</h2>
+        </div>
+        <div class="popup-main">
+            <div id="map"></div> 
+        </div>
+    </div>  
+    <!-- Yandex Map End -->
+
+    <!-- Mobile Menu Start -->
     <nav class="cd-nav-container right_menu" id="cd-nav">
         <div class="header__open_menu">
             <a href="/" class="rmenu_logo" title="">
@@ -384,7 +397,8 @@
             <li><a class="page-scroll" href="#footer">Contact</a></li>
         </ul>
     </nav>
-    <div class="cd-overlay"></div>
+
+    <div class="cd-overlay"></div><!-- /.cd-overlay -->
     <!-- Mobile Menu End --> 
     
 
@@ -400,6 +414,7 @@
     <script src="assets/js/plugins/bootstrap-datepicker.js"></script>
     <script src="assets/js/plugins/bootstrap-datetimepicker.js"></script>
     <script src="assets/js/plugins/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=pdct.1.1.20181030T175834Z.133bc6bb41576943.2897484581a2a12fea17740a34279c270c29ac48&lang=en_US"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
