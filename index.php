@@ -61,7 +61,7 @@
             <div id="navbar_content">
                 <div class="navbar-header">
                     <a class="navbar-brand custom-primary" href="#"><img src="assets/img/logo.png" alt="logo" /> Burger House</a>
-                    <a href="#cd-nav" class="cd-nav-trigger right_menu_icon">
+                    <a href="#cd-nav" class="cd-nav-trigger burger-menu-icon">
                         <span><i class="fa fa-bars" aria-hidden="true"></i></span>
                     </a>
                 </div>
@@ -385,16 +385,30 @@
     <!-- Yandex Map End -->
 
     <!-- Mobile Menu Start -->
-    <nav class="cd-nav-container right_menu" id="cd-nav">
-        <div class="header__open_menu">
-            <a href="/" class="rmenu_logo" title="">
-                <img src="assets/img/logo.png" alt="logo" />
-            </a>
+    <nav class="cd-nav-container burger-menu" id="cd-nav">
+        <div class="rmenu_header">
+            <div class="rmenu_header-left">
+                <a href="/" class="rmenu_logo" title="">
+                    <img src="assets/img/logo.png" alt="logo" />
+                </a>
+            </div>
+            <div class="rmenu_header-right">
+                <div class="call-delivery custom-primary">
+                    <span class="call-delivery-label">Call for Delivery</span>
+                    <a href="https://web.whatsapp.com/send?phone=+4450687474&text=Hello Burger House ✋&source&data&app_absent"
+                        class="call-delivery-number">+4 450 68 7474</a>
+                </div>
+                <div class="cd-close-nav">
+                    <img src="assets/img/icons/close.svg" alt="close" />
+                </div>
+            </div>
         </div>
         <ul class="rmenu_list">
             <li><a class="page-scroll" href="#header">Home</a></li>
+            <li><a class="page-scroll" href="#menu">Menu</a></li>
             <li><a class="page-scroll" href="#reservation">Reservation</a></li>
-            <li><a class="page-scroll" href="#footer">Contact</a></li>
+            <li><a class="page-scroll" href="#events">Events</a></li>
+            <li><a class="page-scroll" href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 

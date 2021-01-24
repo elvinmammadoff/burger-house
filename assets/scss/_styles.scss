@@ -1656,10 +1656,19 @@ footer {
     }
     .navbar {
         height: 105px;
-        padding: 0 50px 0 20px;
-        &-right {
-            display: none;
+        padding: 0 20px;
+        &-collapse {
+            &.collapse {
+                display: none;
+            }
         }
+        &-header {
+            width: 100%;
+            position: relative;
+        }
+    }
+    .cd-nav-trigger {
+        right: 0;
     }
     .banner {
         &-slider {

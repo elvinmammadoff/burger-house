@@ -45,7 +45,7 @@
         $("body").css({'overflow':'hidden'});
     });
     
-    $('.cd-close-nav, .cd-overlay').on('click', function(event){
+    $('.cd-close-nav, .cd-overlay, .page-scroll').on('click', function(event){
         event.preventDefault();
         toggleLeftNav(false);
         toggleRightNav(false);
@@ -261,13 +261,13 @@
 
     //======= Website Shaking on Scroll (specifically in Chrome) Start ========
 
-    window.addEventListener('touchmove', function (event) {
-        event.preventDefault()
-    }, false)
+    // window.addEventListener('touchmove', function (event) {
+    //     event.preventDefault()
+    // }, false)
   
-    document.querySelector('.body-container').addEventListener('touchmove', function (event) {
-        event.stopPropagation()
-    }, false)
+    // document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+    //     event.stopPropagation()
+    // }, false)
     //======= Website Shaking on Scroll (specifically in Chrome) End ========
 
 
