@@ -174,8 +174,8 @@
         <div id="menu-slider" class="menu-slider">
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger1</h4>
@@ -185,8 +185,8 @@
             </div>
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger2</h4>
@@ -196,8 +196,8 @@
             </div>
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                    <img src="assets/img/menu-slider/menu_3.png" alt="" class="menu-slider-item-burger" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger3</h4>
@@ -207,8 +207,8 @@
             </div>
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="assets/img/menu-slider/menu_3.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger4</h4>
@@ -219,7 +219,7 @@
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
                     <img src="assets/img/menu-slider/menu_2.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger5</h4>
@@ -229,8 +229,8 @@
             </div>
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
-                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />
+                    <img src="assets/img/menu-slider/menu_3.png" alt="" class="menu-slider-item-burger" />
+<!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger6</h4>
@@ -239,7 +239,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- Menu Slider End -->
 
     <!-- Events Start -->
@@ -250,19 +250,19 @@
                     <h5 class="section-label">Always Tasty Burger</h5>
                     <h2 class="section-title">Choose & Enjoy</h2>
                     <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
-                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
             </div>
             <div class="events-item">
                 <div class="section-header">
                     <h5 class="section-label">Always Tasty</h5>
                     <h2 class="section-title">Choose & Enjoy</h2>
                     <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
                 <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
@@ -272,14 +272,14 @@
                     <h5 class="section-label">Always</h5>
                     <h2 class="section-title">Choose & Enjoy</h2>
                     <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
                 <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
             </div>
         </div>
-    </section> 
+    </section>
     <!-- Events End -->
 
     <!-- Reservation Start -->
@@ -324,15 +324,15 @@
                         <div class="col-sm-6">
                             <button type="submit" class="button">Find a table</button>
                         </div>
-                    </div> 
+                    </div>
                 </form>
             </div>
             <div class="reservation-right">
                 <img src="assets/img/reservation/burger-food.png" alt="" />
             </div>
         </div>
-    </section> 
-    <!-- Reservation End -->      
+    </section>
+    <!-- Reservation End -->
 
     <!-- Footer Start -->
     <footer id="contact">
@@ -371,7 +371,7 @@
     <div class="scroll-up">
         <div class="scroll-up__icon"><i class="fa fa-arrow-up"></i></div>
     </div>
-    <!-- Scroll Up End -->  
+    <!-- Scroll Up End -->
 
     <!-- Yandex Map Start -->
     <div class="popup popup--sign" id="map-popup" style="display: none;">
@@ -379,9 +379,9 @@
             <h2 class="popup-title upper">Büyükdere Cad., 22A, Istanbul, Turkey</h2>
         </div>
         <div class="popup-main">
-            <div id="map"></div> 
+            <div id="map"></div>
         </div>
-    </div>  
+    </div>
     <!-- Yandex Map End -->
 
     <!-- Mobile Menu Start -->
@@ -413,8 +413,8 @@
     </nav>
 
     <div class="cd-overlay"></div><!-- /.cd-overlay -->
-    <!-- Mobile Menu End --> 
-    
+    <!-- Mobile Menu End -->
+
 
     <!-- JavaScripts -->
     <script src="assets/js/plugins/jquery-2.1.1.min.js"></script>
@@ -433,4 +433,4 @@
 
 </body>
 
-</html>  
+</html>

@@ -164,6 +164,7 @@
         autoplaySpeed: 3000,
         pauseOnFocus: false,
         pauseOnHover:false,
+        variableWidth: false
     });
     //======= Events Slider End ========
 
