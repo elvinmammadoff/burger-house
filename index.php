@@ -265,7 +265,7 @@
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
-                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
             </div>
             <div class="events-item">
                 <div class="section-header">
@@ -276,7 +276,7 @@
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
-                <img src="assets/img/events/event_1.png" alt="" class="events-item-image" />
+                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
             </div>
         </div>
     </section>
@@ -433,4 +433,4 @@
 
 </body>
 
-</html>
+</html>  
