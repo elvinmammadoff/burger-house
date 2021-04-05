@@ -69,7 +69,9 @@
                     <div class="navbar-right">
                         <div class="call-delivery">
                             <img src="assets/img/delivery-icon.png" alt="" class="call-delivery-icon" />
-                            <span class="call-delivery-number custom-primary">Call for Delivery <a href="https://web.whatsapp.com/send?phone=+4450687474&text=Hello Burger House ✋&source&data&app_absent">+4 450 68 7474</a></span>
+                            <span class="call-delivery-number custom-primary">Call for Delivery
+                                <a href="https://web.whatsapp.com/send?phone=+4450687474&text=Hello Burger House ✋&source&data&app_absent" target="_blank">+4 450 68 7474</a>
+                            </span>
                         </div>
                         <ul class="nav navbar-nav">
                             <li><a class="page-scroll" href="#header">Home</a></li>
@@ -126,7 +128,7 @@
             </div>
         </div>
     </div>
-    <!-- Banner End --> 
+    <!-- Banner End -->
 
     <!-- Banner Grid Start -->
     <div class="banner-grid">
@@ -158,7 +160,7 @@
             </div>
         </div>
     </div>
-    <!-- Banner Grid End --> 
+    <!-- Banner Grid End -->
 
     <!-- Menu Slider Start -->
     <section class="section" id="menu">
@@ -167,10 +169,10 @@
             <h2 class="section-title">Choose & Enjoy</h2>
             <p class="section-subtitle text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
             </p>
         </div>
-    
+
         <div id="menu-slider" class="menu-slider">
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
