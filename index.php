@@ -247,38 +247,40 @@
     <!-- Events Start -->
     <section class="section" id="events">
         <div class="events">
-            <div class="events-item">
-                <div class="section-header">
-                    <h5 class="section-label">Always Tasty Burger</h5>
-                    <h2 class="section-title">Choose & Enjoy</h2>
-                    <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                    </p>
+            <div class="events-wrapper">
+                <div class="events-item">
+                    <div class="section-header">
+                        <h5 class="section-label">Always Tasty Burger</h5>
+                        <h2 class="section-title">Choose & Enjoy</h2>
+                        <p class="section-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                    <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
                 </div>
-                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
-            </div>
-            <div class="events-item">
-                <div class="section-header">
-                    <h5 class="section-label">Always Tasty</h5>
-                    <h2 class="section-title">Choose & Enjoy</h2>
-                    <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                    </p>
+                <div class="events-item">
+                    <div class="section-header">
+                        <h5 class="section-label">Always Tasty</h5>
+                        <h2 class="section-title">Choose & Enjoy</h2>
+                        <p class="section-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                    <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
                 </div>
-                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
-            </div>
-            <div class="events-item">
-                <div class="section-header">
-                    <h5 class="section-label">Always</h5>
-                    <h2 class="section-title">Choose & Enjoy</h2>
-                    <p class="section-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                    </p>
+                <div class="events-item">
+                    <div class="section-header">
+                        <h5 class="section-label">Always</h5>
+                        <h2 class="section-title">Choose & Enjoy</h2>
+                        <p class="section-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                    <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
                 </div>
-                <img src="assets/img/events/event_1.jpg" alt="" class="events-item-image" />
             </div>
         </div>
     </section>

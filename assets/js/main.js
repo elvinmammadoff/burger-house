@@ -129,7 +129,7 @@
         responsive: [
             {
                 breakpoint: 1160,
-                 settings: {
+                settings: {
                     centerMode: true,
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -137,13 +137,13 @@
             },
             {
                 breakpoint: 840,
-                 settings: {
+                settings: {
                     slidesToShow: 1,
                 }
             },
             {
                 breakpoint: 600,
-                 settings: {
+                settings: {
                     slidesToShow: 1,
                 }
             }
@@ -153,7 +153,7 @@
 
 
     //======= Events Slider Start ========
-    $('.events').slick({
+    $('.events-wrapper').slick({
         dots: true,
         arrows: false,
         infinite: true,
