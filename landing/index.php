@@ -59,27 +59,27 @@
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="demo">
-                    <a href="https://sensational-cupcake-075815.netlify.app/" class="demo-item">
+                    <a href="https://poetic-pothos-84995b.netlify.app/" class="demo-item">
                         <div class="demo-inner page-1"></div>
                     </a>
                     <h4 class="demo-title">Home Version 1</h4>
-                    <a href="https://sensational-cupcake-075815.netlify.app/" class="button">View Page</a>
+                    <a href="https://poetic-pothos-84995b.netlify.app/" class="button">View Page</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="demo">
-                    <a href="https://sensational-cupcake-075815.netlify.app//home-v2/index.html" class="demo-item">
+                    <a href="https://poetic-pothos-84995b.netlify.app/home-v2" class="demo-item">
                         <div class="demo-inner page-2"></div>
                     </a>
                     <h4 class="demo-title">Home Version 2</h4>
-                    <a href="https://sensational-cupcake-075815.netlify.app//home-v2/index.html" class="button">View Page</a>
+                    <a href="https://poetic-pothos-84995b.netlify.app/home-v2" class="button">View Page</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="copyright">
         <div class="container">
-            <p class="copyright-text">Copyright © 2020 Alissio All Rights Reserved.</p>
+            <p class="copyright-text">Copyright © 2023 Alissio All Rights Reserved.</p>
         </div>
     </div>
 
