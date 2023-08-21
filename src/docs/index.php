@@ -33,8 +33,8 @@
 
                   <ul class="meta">
                       <li><strong>Author:</strong> <a href="https://themeforest.net/user/alissio" target="_blank">Alissio</a></li>
-                      <li><strong>Live Preview:</strong> <a href="https://burger-house.herokuapp.com/">View Demo</a></li>
-                      <li><strong>Support:</strong> <a href="mailto:elvinmammadoff@gmail.com">Ask a Question</a></li> 
+                      <li><strong>Live Preview:</strong> <a href="https://poetic-pothos-84995b.netlify.app/">View Demo</a></li>
+                      <li><strong>Support:</strong> <a href="mailto:elvinmammadoff@gmail.com">Ask a Question</a></li>
                   </ul>
 
                   <p>Thank you for purchasing my theme. <br> If you have any questions that are beyond the scope of this help file, <br> please feel free to email <a href="mailto:designer.rafiq@gmail.com">here</a><br> Thanks so much!</p>
@@ -66,7 +66,6 @@
                           <li data-magellan-arrival="support-desk"><a href="#support-desk">Support Desk</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#files-resources">Files & Resources</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#php-file">PHP Code Explanation</a></li>
-                          <li data-magellan-arrival="files-resources"><a href="#yandex-map">Yandex Map Api</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#updates">Regular Updates</a></li>
                       </ol>
 
@@ -77,7 +76,7 @@
                 <m id="main-content" class="large-9 large-pull-3 columns">
 
                     <section id="introduction" class="section" data-magellan-destination="introduction">
-                          
+
                           <h1>Howdy!</h1>
                           <p class="lead">You are a shining owner of a regular license based on Burger House Theme</p>
                           <p>First of all, Thank you so much for purchasing this template and for being my loyal customer. You are entitled to get free updates to this product + exceptional support (as per market policy) from the author directly.</p>
@@ -86,7 +85,7 @@
                     </section>
 
                     <section id="getting-started" class="section" data-magellan-destination="getting-started">
-                          
+
                           <h1>1. Getting Started</h1>
 
                           <br>
@@ -99,7 +98,7 @@
                             <li><strong>template</strong> — Contains all the original template files comprises of HTML, CSS, JS etc. This is the folder which you'll upload on your server after necessary modifications.</li>
 
                             <li><strong>documentation</strong> — Inside this folder, you will find the same documentation updated with the latest changes.</li>
-                            
+
                           </ul>
 
                           <p>Details regarding contents and structure of <code>template</code> folder is given below.</p>
@@ -107,7 +106,7 @@
                     </section>
 
                     <section id="html-structure" class="section"  data-magellan-destination="html-structure">
-                          
+
                       <h1>2. HTML Structure</h1>
 
                       <br>
@@ -120,8 +119,8 @@
 
 <pre data-language="HTML Skeleton">
   <code class="language-markup">
-  
-    <!-- BEGIN  Loading Section -->  
+
+    <!-- BEGIN  Loading Section -->
     <div class="loading-overlay">
         <div class="spinner">
             <span></span>
@@ -132,7 +131,7 @@
         </div>
     </div>
     <!-- END Loading Section -->
-  
+
     <!-- Header Start -->
     <header id="header"></header>
     <!-- Header End -->
@@ -149,8 +148,11 @@
     <!-- Events Start -->
     <section class="section" id="events"></section>
 
+      <!-- Gallery Start -->
+    <section class="section" id="gallery"></section>
+
     <!-- Reservation Start -->
-    <section class="section" id="reservation"></section>  
+    <section class="section" id="reservation"></section>
 
     <!--  Begin Footer  -->
     <footer id="contact"></footer>
@@ -159,21 +161,21 @@
     <!-- Scroll Up Start -->
     <div class="scroll-up"></div>
 
-    <!-- Yandex Map Start -->
-    <div class="popup popup--sign" id="map-popup" style="display: none;"></div>
-    
+      <!-- Address Popup Start -->
+    <div id="address-popup"></div>
+
     <!-- Mobile Menu Start -->
     <nav class="cd-nav-container right_menu" id="cd-nav"></nav>
 
     <div class="cd-overlay"></div><!-- /.cd-overlay -->
-  
+
   </code>
   </pre>
-                          
+
 
                     </section>
                     <section id="skeleton-details" class="sub-section"  data-magellan-destination="skeleton-details">
-                          
+
                           <h2>2.1. Skeleton Details</h2>
 
                           <br>
@@ -186,17 +188,17 @@
 
                           <p><code>div class="banner-grid"</code> contains the code for banner about discount or new campaigns</p>
 
-                          <p><code>section id="menu"</code> <code>section id="events"</code> <code>section id="reservation"</code> section contains the page specific content as well as their details.</p>
+                          <p><code>section id="menu"</code> <code>section id="events"</code> <code>section id="gallery"</code> <code>section id="reservation"</code> section contains the page specific content as well as their details.</p>
 
                           <p><code>footer id="contact"</code> section typically remains the same. It consist of short about info, contact details, social icons and copyright text note also.</p>
 
-                          <p>Further, skeleton shows two additional markup tags. <code>div class="scroll-up"</code> contains the code scroll to the top of the page. <code>div id="map-popup"</code>shows address location on the Yandex map and open when you click address link at the footer. <code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
+                          <p>Further, skeleton shows two additional markup tags. <code>div class="scroll-up"</code> contains the code scroll to the top of the page. <code>div id="address-popup"</code>shows address popup and open when you click address link at the footer. <code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
 
                           <p></p>
 
                     </section>
                     <section id="stylesheet-files" class="section" data-magellan-destination="stylesheet-files">
-                          
+
                           <h1>3. Stylesheet Files</h1>
 
                           <br>
@@ -205,38 +207,44 @@
 
 <pre data-language="Folder Map">
   <code class="language-markup">
-    css/
+    css/plugins/
     |
     |-- bootstrap.min.css
     |-- bootstrap-datepicker.css
     |-- bootstrap-datetimepicker.css
-    |-- all.min.css
-    |-- style.css
+    |-- scrolling-nav.css
     |-- aos.css
     |-- slick.css
     |-- slick-theme.css
-    |-- jquery.fancybox.css
+    |-- jquery.fancybox.min.css
     |-- touch-sideswipe.css
+
+
+    css/
+    |
+    |-- main.css
+    |-- style.css
   </code>
 </pre>
 
                           <br>
                           <p>
-                           As it can be seen, the folder contains 14 <code>css</code> files.<br> 
-                          <code>bootstrap.min.css</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system.<br>
-                          <code>bootstrap-datepicker.css</code> provides a flexible datepicker widget in the Bootstrap style.<br>
-                          <code>bootstrap-datetimepicker.css</code> widget based on twitter bootstrap.<br>
-                          <code>all.min.css</code> is iconic FontAwesome font and CSS toolkit.<br>
-                          <code>style.css</code> custom style file.<br> 
-                          <code>aos.css</code> animate on scroll library.<br>     
-                          <code>slick.css</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more.<br>                          
-                          <code>jquery.fancybox.css</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br>
-                          <code>touch-sideswipe.css</code> widget-library for mobile navbar (vanilla js and little bit pure css)                                        
+                              As it can be seen, the folder contains 10 <code>css</code> files.<br>
+                              <code>bootstrap.min.css</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system.<br>
+                              <code>bootstrap-datepicker.css</code> provides a flexible datepicker widget in the Bootstrap style.<br>
+                              <code>bootstrap-datetimepicker.css</code> widget based on twitter bootstrap.<br>
+                              <code>scrolling-nav.css</code> is a one page Bootstrap template with smooth scrolling animations and a collapsing fixed top navigation bar.<br>
+                              <code>aos.css</code> animate on scroll library.<br>
+                              <code>slick.css</code> <code>slick-theme.css</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more.<br>
+                              <code>jquery.fancybox.min.css</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br>
+                              <code>touch-sideswipe.css</code> widget-library for mobile navbar (vanilla js and little bit pure css)
+                              <code>main.css</code> main style file.<br>
+                              <code>style.css</code> custom style file.<br>
                           </p>
                     </section>
 
                     <section id="javascript-files" class="section" data-magellan-destination="javascript-files">
-                          
+
                           <h1>4. Javascript Files</h1>
 
                           <br>
@@ -245,67 +253,71 @@
 
 <pre data-language="Folder Map">
   <code class="language-markup">
-    js/
-    |    
-    |-- jquery-2.1.1.min.js  
-    |-- bootstrap.min.js 
-    |-- jquery.easing.min.js      
+    js/plugins/
+    |
+    |-- jquery-2.1.1.min.js
+    |-- bootstrap.min.js
+    |-- jquery.easing.min.js
     |-- bootstrap-datepicker.js
     |-- bootstrap-datetimepicker.js
     |-- moment.js
-    |-- main.js
     |-- aos.js
-    |-- jquery.fancybox.js
+    |-- jquery.fancybox.min.js
     |-- jquery.mousewheel.min.js
     |-- jquery.touchSwipe.min.js
     |-- slick.min.js
-    |-- https://api-maps.yandex.ru/2.1/?apikey=...
+
+
+    js/
+    |
+    |-- main.js
   </code>
-</pre> 
-                         
+</pre>
+
                           <br>
                           <p>
-                          In this folder there are 13 files. <br> 
-                          <code>jquery.min.js</code> is a fast, small, and feature-rich JavaScript library<br>
-                          <code>jquery.easing.min.js</code> a jQuery plugin from GSGD to give advanced easing options<br>
+                          In this folder there are 12 files. <br>
+                          <code>jquery-2.1.1.min.js</code> is a fast, small, and feature-rich JavaScript library<br>
                           <code>bootstrap.min.js</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system<br>
+                          <code>jquery.easing.min.js</code> a jQuery plugin from GSGD to give advanced easing options<br>
                           <code>bootstrap-datetimepicker.js</code> widget based on twitter bootstrap<br />
                           <code>bootstrap-datepicker.js</code> provides a flexible datepicker widget in the Bootstrap style
-                          <code>main.js</code> contains all the custom programmed javascript coded specifically for this template<br> 
+                          <code>moment.js</code> a JavaScript date library for parsing, validating, manipulating, and formatting dates<br />
                           <code>aos.js</code> animate On scroll library<br />
-                          <code>slick.min.js</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more<br>
-                          <code>jquery.fancybox.js</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br />
+                          <code>jquery.fancybox.min.js</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br />
+                          <code>jquery-mousewheel.min.js</code> a jQuery plugin that adds cross-browser mouse wheel support.<br />
                           <code>jquery.touchSwipe.min.js</code> widget-library for mobile navbar (vanilla js and little bit pure css) <br />
-                          <code>https://api-maps.yandex.ru/2.1/?apikey=...</code> to use the Yandex Maps Embed API you must have an API key. The API key is a unique identifier that is used to authenticate requests associated with your project for usage and billing purposes.                   
+                          <code>slick.min.js</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more<br>
+                          <code>main.js</code> contains all the custom programmed javascript coded specifically for this template<br>
                         </p>
 
                     </section>
 
                     <section id="support-desk" class="section" data-magellan-destination="support-desk">
-                          
+
                           <h1>5. Support Desk</h1>
 
                           <br>
 
                           <p>Please be reminded that you have purchased a very affordable theme and you have not paid for a full-time web design agency. Occasionally, we will help with small tweaks, but these requests will be put on a lower priority due to their nature.</p>
-                      
+
 
                           <section class="sub-section">
-                                
+
                                 <h2>Support for my items includes:</h2>
 
                                 <br>
 
                                 <ul>
                                   <li>Responding to questions or problems regarding the item and its features</li>
-                                  <li>Fixing bugs and reported issues</li>        
+                                  <li>Fixing bugs and reported issues</li>
                                   <li>Providing updates to ensure compatibility with new software versions</li>
-                                </ul>   
+                                </ul>
 
                           </section>
 
                           <section class="sub-section">
-                                
+
                                 <h2>Item support does not include:</h2>
 
                                 <br>
@@ -313,12 +325,12 @@
                                 <ul>
                                   <li>Customization and installation services</li>
                                   <li>Support for third party software and plug-ins</li>
-                                </ul>   
+                                </ul>
 
                           </section>
 
                           <section class="sub-section">
-                                
+
                                 <h2>Before seeking support, please...</h2>
 
                                 <br>
@@ -332,13 +344,13 @@
                                   <li>Make sure to state the name of the item you are having issues with when requesting support via ThemeForest.</li>
                                 </ul>
 
-                          </section>   
+                          </section>
 
 
-                    </section>                    
+                    </section>
 
                     <section id="files-resources" class="section" data-magellan-destination="files-resources">
-                          
+
                           <h1>6. Files &amp; Resources</h1>
 
                           <br>
@@ -370,7 +382,7 @@
                     </section>
 
                     <section id="php-file" class="section" data-magellan-destination="php-file">
-                          
+
                           <h1>7. PHP Code Explanation</h1>
 
                           <br>
@@ -379,25 +391,18 @@
 
                     </section>
 
-                    <section id="yandex-map" class="section" data-magellan-destination="yandex-map">
-                          
-                          <h1>8. Yandex Map Api</h1>
-
-                          <br>
-
-                          <p>I've used Yandex Map Api to generate Yandex Map. You are able to change map style or marker from guidelines <a href="https://yandex.com/dev/maps/jsapi/doc/2.1/quick-start/index.html?from=techmapsmain" target="_blank">Yandex Map</a><p>
-
-                    </section>
-
                     <section id="updates" class="section" data-magellan-destination="updates">
-                          
+
                           <h1>9. Regular Updates</h1>
 
                           <br>
 
-                          <p>We’re always improving our skills and knowledge so we’re making changes regularly. From bug fixes to new awesome features, updates generally come at least twice a month.<p>                       
+                          <p>We’re always improving our skills and knowledge so we’re making changes regularly. From bug fixes to new awesome features, updates generally come at least twice a month.<p>
 
-<pre>   
+<pre>
+
+  V. 1.1.0 – 21.08.2023
+  - Added Gallery and fancybox popup image
   
   V. 1.0.0 – 20.01.2021
   - Initial release

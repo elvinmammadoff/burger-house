@@ -66,7 +66,6 @@
                           <li data-magellan-arrival="support-desk"><a href="#support-desk">Support Desk</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#files-resources">Files & Resources</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#php-file">PHP Code Explanation</a></li>
-                          <li data-magellan-arrival="files-resources"><a href="#yandex-map">Yandex Map Api</a></li>
                           <li data-magellan-arrival="files-resources"><a href="#updates">Regular Updates</a></li>
                       </ol>
 
@@ -149,6 +148,9 @@
     <!-- Events Start -->
     <section class="section" id="events"></section>
 
+      <!-- Gallery Start -->
+    <section class="section" id="gallery"></section>
+
     <!-- Reservation Start -->
     <section class="section" id="reservation"></section>  
 
@@ -159,8 +161,8 @@
     <!-- Scroll Up Start -->
     <div class="scroll-up"></div>
 
-    <!-- Yandex Map Start -->
-    <div class="popup popup--sign" id="map-popup" style="display: none;"></div>
+      <!-- Address Popup Start -->
+    <div id="address-popup"></div>
     
     <!-- Mobile Menu Start -->
     <nav class="cd-nav-container right_menu" id="cd-nav"></nav>
@@ -186,11 +188,11 @@
 
                           <p><code>div class="banner-grid"</code> contains the code for banner about discount or new campaigns</p>
 
-                          <p><code>section id="menu"</code> <code>section id="events"</code> <code>section id="reservation"</code> section contains the page specific content as well as their details.</p>
+                          <p><code>section id="menu"</code> <code>section id="events"</code> <code>section id="gallery"</code> <code>section id="reservation"</code> section contains the page specific content as well as their details.</p>
 
                           <p><code>footer id="contact"</code> section typically remains the same. It consist of short about info, contact details, social icons and copyright text note also.</p>
 
-                          <p>Further, skeleton shows two additional markup tags. <code>div class="scroll-up"</code> contains the code scroll to the top of the page. <code>div id="map-popup"</code>shows address location on the Yandex map and open when you click address link at the footer. <code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
+                          <p>Further, skeleton shows two additional markup tags. <code>div class="scroll-up"</code> contains the code scroll to the top of the page. <code>div id="address-popup"</code>shows address popup and open when you click address link at the footer. <code>div id="cd-nav"</code> contains the menu for the mobile version. <code>div class="cd-overlay"</code> when mobile menu showed this layer visibled under mobile menu above content too.</p>
 
                           <p></p>
 
@@ -205,33 +207,39 @@
 
 <pre data-language="Folder Map">
   <code class="language-markup">
-    css/
+    css/plugins/
     |
     |-- bootstrap.min.css
     |-- bootstrap-datepicker.css
     |-- bootstrap-datetimepicker.css
-    |-- all.min.css
-    |-- style.css
+    |-- scrolling-nav.css
     |-- aos.css
     |-- slick.css
     |-- slick-theme.css
-    |-- jquery.fancybox.css
+    |-- jquery.fancybox.min.css
     |-- touch-sideswipe.css
+
+
+    css/
+    |
+    |-- main.css
+    |-- style.css
   </code>
 </pre>
 
                           <br>
                           <p>
-                           As it can be seen, the folder contains 14 <code>css</code> files.<br> 
-                          <code>bootstrap.min.css</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system.<br>
-                          <code>bootstrap-datepicker.css</code> provides a flexible datepicker widget in the Bootstrap style.<br>
-                          <code>bootstrap-datetimepicker.css</code> widget based on twitter bootstrap.<br>
-                          <code>all.min.css</code> is iconic FontAwesome font and CSS toolkit.<br>
-                          <code>style.css</code> custom style file.<br> 
-                          <code>aos.css</code> animate on scroll library.<br>     
-                          <code>slick.css</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more.<br>                          
-                          <code>jquery.fancybox.css</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br>
-                          <code>touch-sideswipe.css</code> widget-library for mobile navbar (vanilla js and little bit pure css)                                        
+                              As it can be seen, the folder contains 10 <code>css</code> files.<br>
+                              <code>bootstrap.min.css</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system.<br>
+                              <code>bootstrap-datepicker.css</code> provides a flexible datepicker widget in the Bootstrap style.<br>
+                              <code>bootstrap-datetimepicker.css</code> widget based on twitter bootstrap.<br>
+                              <code>scrolling-nav.css</code> is a one page Bootstrap template with smooth scrolling animations and a collapsing fixed top navigation bar.<br>
+                              <code>aos.css</code> animate on scroll library.<br>
+                              <code>slick.css</code> <code>slick-theme.css</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more.<br>
+                              <code>jquery.fancybox.min.css</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br>
+                              <code>touch-sideswipe.css</code> widget-library for mobile navbar (vanilla js and little bit pure css)
+                              <code>main.css</code> main style file.<br>
+                              <code>style.css</code> custom style file.<br>
                           </p>
                     </section>
 
@@ -245,7 +253,7 @@
 
 <pre data-language="Folder Map">
   <code class="language-markup">
-    js/
+    js/plugins/
     |    
     |-- jquery-2.1.1.min.js  
     |-- bootstrap.min.js 
@@ -253,30 +261,34 @@
     |-- bootstrap-datepicker.js
     |-- bootstrap-datetimepicker.js
     |-- moment.js
-    |-- main.js
     |-- aos.js
-    |-- jquery.fancybox.js
+    |-- jquery.fancybox.min.js
     |-- jquery.mousewheel.min.js
     |-- jquery.touchSwipe.min.js
     |-- slick.min.js
-    |-- https://api-maps.yandex.ru/2.1/?apikey=...
+
+
+    js/
+    |
+    |-- main.js
   </code>
 </pre> 
                          
                           <br>
                           <p>
-                          In this folder there are 13 files. <br> 
-                          <code>jquery.min.js</code> is a fast, small, and feature-rich JavaScript library<br>
-                          <code>jquery.easing.min.js</code> a jQuery plugin from GSGD to give advanced easing options<br>
+                          In this folder there are 12 files. <br>
+                          <code>jquery-2.1.1.min.js</code> is a fast, small, and feature-rich JavaScript library<br>
                           <code>bootstrap.min.js</code> is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system<br>
+                          <code>jquery.easing.min.js</code> a jQuery plugin from GSGD to give advanced easing options<br>
                           <code>bootstrap-datetimepicker.js</code> widget based on twitter bootstrap<br />
                           <code>bootstrap-datepicker.js</code> provides a flexible datepicker widget in the Bootstrap style
-                          <code>main.js</code> contains all the custom programmed javascript coded specifically for this template<br> 
+                          <code>moment.js</code> a JavaScript date library for parsing, validating, manipulating, and formatting dates<br />
                           <code>aos.js</code> animate On scroll library<br />
-                          <code>slick.min.js</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more<br>
-                          <code>jquery.fancybox.js</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br />
+                          <code>jquery.fancybox.min.js</code> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page <br />
+                          <code>jquery-mousewheel.min.js</code> a jQuery plugin that adds cross-browser mouse wheel support.<br />
                           <code>jquery.touchSwipe.min.js</code> widget-library for mobile navbar (vanilla js and little bit pure css) <br />
-                          <code>https://api-maps.yandex.ru/2.1/?apikey=...</code> to use the Yandex Maps Embed API you must have an API key. The API key is a unique identifier that is used to authenticate requests associated with your project for usage and billing purposes.                   
+                          <code>slick.min.js</code> is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more<br>
+                          <code>main.js</code> contains all the custom programmed javascript coded specifically for this template<br>
                         </p>
 
                     </section>
@@ -379,16 +391,6 @@
 
                     </section>
 
-                    <section id="yandex-map" class="section" data-magellan-destination="yandex-map">
-                          
-                          <h1>8. Yandex Map Api</h1>
-
-                          <br>
-
-                          <p>I've used Yandex Map Api to generate Yandex Map. You are able to change map style or marker from guidelines <a href="https://yandex.com/dev/maps/jsapi/doc/2.1/quick-start/index.html?from=techmapsmain" target="_blank">Yandex Map</a><p>
-
-                    </section>
-
                     <section id="updates" class="section" data-magellan-destination="updates">
                           
                           <h1>9. Regular Updates</h1>
@@ -397,7 +399,10 @@
 
                           <p>We’re always improving our skills and knowledge so we’re making changes regularly. From bug fixes to new awesome features, updates generally come at least twice a month.<p>                       
 
-<pre>   
+<pre>
+
+  V. 1.1.0 – 21.08.2023
+  - Added Gallery and fancybox popup image
   
   V. 1.0.0 – 20.01.2021
   - Initial release
