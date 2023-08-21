@@ -46,7 +46,7 @@
                 <a href="#pages" class="button upper page-scroll">View Demos</a>
             </div>
             <div class="banner-image">
-                <img src="assets/img/pizza.png" alt="" />
+                <img src="assets/img/burger.png" alt="" />
             </div>
         </div>
     </div>

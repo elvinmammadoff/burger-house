@@ -169,7 +169,10 @@ a:focus {
 .banner-image {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 130px);
+    transform: translate(-50%, 60px);
+}
+.banner-image img {
+    width: 80%;
 }
 
 /*---------------------------------------- 

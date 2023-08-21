@@ -207,7 +207,7 @@
             </div>
             <div class="menu-slider-item">
                 <div class="menu-slider-item-image">
-                    <img src="src/assets/img/menu-slider/menu_1.png" alt="" class="menu-slider-item-burger" />
+                    <img src="src/assets/img/menu-slider/menu_4.png" alt="" class="menu-slider-item-burger" />
                 </div>
                 <div class="menu-slider-item-desc">
                     <h4 class="menu-slider-item-title">Hamburger4</h4>
