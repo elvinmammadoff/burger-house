@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993276d3-d61b-4b12-8eb3-c90489018db8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/landing/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/landing/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="993276d3-d61b-4b12-8eb3-c90489018db8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692614551046</updated>
-      <workItem from="1692614552198" duration="8277000" />
+      <workItem from="1692614552198" duration="8473000" />
     </task>
     <servers />
   </component>
