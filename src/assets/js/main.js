@@ -16,6 +16,7 @@
     |___ Banner Slider
     |___ Affix Navbar
 	|___ Datepicker
+	|___ Fancybox
 	|___ Scroll Up
     |___ Website Shaking on Scroll (specifically in Chrome)
     |___ 
@@ -193,12 +194,39 @@
     //======= Datepicker End ========
 
 
+
+    //======= START Fancybox ========
+
     /* ==========================
        Fancybox grab disabled
-    =============================*/ 
+    =============================*/
     $("[data-fancybox]").fancybox({
         touch: false
     });
+
+    jQuery(document).ready(function($) {
+        $('.fancybox')
+            .fancybox({
+                beforeShow: function () {
+                    if (this.title) {
+                        // New line
+                        this.title += '<br />';
+                    }
+                },
+                afterShow: function () {
+                },
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }, //<-- add a comma to separate the following option
+                    buttons: {} //<-- add this for buttons
+                },
+                closeBtn: true, // you will use the buttons now
+                arrows: true
+            });
+    });
+
+    //======= END Fancybox ========
 
 
     //======= Scroll Up Start ========
