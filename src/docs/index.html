@@ -401,7 +401,7 @@
 
 <pre>
 
-  V. 1.1.0 – 21.08.2023
+  V. 1.1.0 – 23.08.2023
   - Added Gallery and fancybox popup image
   
   V. 1.0.0 – 20.01.2021
