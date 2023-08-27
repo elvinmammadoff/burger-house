@@ -401,8 +401,10 @@
 
 <pre>
 
-  V. 1.1.0 – 27.08.2023
-  - Added Gallery and fancybox popup image
+  V. 1.1.1 – 27.08.2023
+  - New: Home page version 2 added;
+  - Added gallery section with Fancybox popup plugin to all versions;
+  - Tweak: Improved Documentation
   
   V. 1.0.0 – 20.01.2021
   - Initial release
