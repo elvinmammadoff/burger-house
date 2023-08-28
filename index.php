@@ -158,7 +158,7 @@
             <h5 class="section-label label">Always Tasty Burger</h5>
             <h2 class="section-title">Choose & Enjoy</h2>
             <p class="section-subtitle text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
                 Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
             </p>
         </div>
@@ -378,27 +378,27 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group form_pos">
-                                <input type="text" name="name" required="" placeholder="Name" class="form-control" />
+                                <input type="text" name="name" required="" placeholder="Name" class="form-control">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form_pos">
-                                <input type="email" name="email" required="" placeholder="Email" class="form-control" />
+                                <input type="email" name="email" required="" placeholder="Email" class="form-control">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form_pos">
-                                <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" />
+                                <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form_pos">
-                                <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" />
+                                <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form_pos">
-                                <input type="number" name="people" required="" placeholder="People" class="form-control" />
+                                <input type="number" name="people" required="" placeholder="People" class="form-control">
                             </div>
                         </div>
                         <div class="col-sm-6">
