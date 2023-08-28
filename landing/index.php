@@ -7,28 +7,28 @@
     <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Butazzo Pizza - Restaurant, Cafe, Fast Food HTML5 Responsive, One Page Template</title>
 
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all" />
-    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/media.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/media.css" type="text/css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="256x256"  href="assets/img/favicon/android-chrome-256x256.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-chrome-192x192.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.ico" />
-    <link rel="manifest" href="assets/img/site.webmanifest" />
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#990100" />
-    <meta name="theme-color" content="#ffffff" />    
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#990100">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 <!-- END head -->
@@ -37,7 +37,7 @@
     <div class="banner" id="banner">
         <div class="banner-inner">
             <div class="container">
-                <img src="assets/img/logo.png" alt="" class="logo" />
+                <img src="assets/img/logo.png" alt="" class="logo">
                 <h1 class="title upper"><span>Fast Food and Restaurant</span></h1>
                 <p class="subtitle">
                     Burger House - perfect template for any Restaurant, Cafe & Fast Food business. Looks good on all types of screens devices and platforms.
@@ -46,7 +46,7 @@
                 <a href="#pages" class="button upper page-scroll">View Demos</a>
             </div>
             <div class="banner-image">
-                <img src="assets/img/burger.png" alt="" />
+                <img src="assets/img/burger.png" alt="">
             </div>
         </div>
     </div>
