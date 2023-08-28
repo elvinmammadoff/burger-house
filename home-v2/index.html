@@ -59,7 +59,7 @@
                     <div class="call-delivery">
                         <img src="src/assets/img/delivery-icon.png" alt="" class="call-delivery-icon">
                         <span class="call-delivery-number custom-primary">Call for Delivery
-                                <a href="https://web.whatsapp.com/send?phone=+4450687474&text=Hello Burger House ✋&source&data&app_absent" target="_blank">+4 450 68 7474</a>
+                                <a href="#" target="_blank">+4 450 68 7474</a>
                             </span>
                     </div>
                     <ul class="nav navbar-nav">
@@ -472,7 +472,7 @@
         <div class="rmenu_header-right">
             <div class="call-delivery custom-primary">
                 <span class="call-delivery-label">Call for Delivery</span>
-                <a href="https://web.whatsapp.com/send?phone=+4450687474&text=Hello Burger House ✋&source&data&app_absent"
+                <a href="#"
                    class="call-delivery-number" target="_blank">+4 450 68 7474</a>
             </div>
             <div class="cd-close-nav">
