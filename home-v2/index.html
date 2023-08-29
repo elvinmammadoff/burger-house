@@ -48,7 +48,7 @@
         <div id="navbar_content">
             <div class="navbar-header">
                 <a class="navbar-brand custom-primary" href="#">
-                    <img src="src/assets/img/logo.png" alt="logo"> Kebab House
+                    <img src="src/assets/img/logo.png" alt="logo"> Burger House
                 </a>
                 <a href="#cd-nav" class="cd-nav-trigger burger-menu-icon">
                     <span><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -419,7 +419,7 @@
     <div class="footer-top">
         <div class="footer-logo">
             <img src="src/assets/img/logo-footer.png" alt="">
-            <span>Kebab House</span>
+            <span>Burger House</span>
         </div>
     </div>
     <div class="footer-middle">

@@ -27,7 +27,7 @@
               <div class="large-10 large-centered columns">
 
                   <div class="name">
-                      <h3>Kebab House</h3>
+                      <h3>Burger House</h3>
                       <p>Premium HTML Template Documentation</p>
                   </div>
 
@@ -78,7 +78,7 @@
                     <section id="introduction" class="section" data-magellan-destination="introduction">
 
                           <h1>Howdy!</h1>
-                          <p class="lead">You are a shining owner of a regular license based on Kebab House Theme</p>
+                          <p class="lead">You are a shining owner of a regular license based on Burger House Theme</p>
                           <p>First of all, Thank you so much for purchasing this template and for being my loyal customer. You are entitled to get free updates to this product + exceptional support (as per market policy) from the author directly.</p>
                           <p>This documentation is to help you understand the template's structure. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge is required to customize this template.</p>
 
@@ -409,7 +409,7 @@
                     </section>
 
                     <footer>
-                      <p>© Kebab House Fast Food & Restaurant HTML Template</p>
+                      <p>© Burger House Fast Food & Restaurant HTML Template</p>
                     </footer>
 
                 </div>
