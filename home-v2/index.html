@@ -436,7 +436,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p class="footer-copyright">© Company Name 2023. All rights reserved.</p>
+        <p class="footer-copyright">© Burger House 2023. All rights reserved.</p>
         <div class="footer-social">
             <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
             <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
