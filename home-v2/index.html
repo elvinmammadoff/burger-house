@@ -59,8 +59,8 @@
                     <div class="call-delivery">
                         <img src="src/assets/img/delivery-icon.png" alt="" class="call-delivery-icon">
                         <span class="call-delivery-number custom-primary">Call for Delivery
-                                <a href="#" target="_blank">+4 450 68 7474</a>
-                            </span>
+                            <a href="#" target="_blank">+4 450 68 7474</a>
+                        </span>
                     </div>
                     <ul class="nav navbar-nav">
                         <li><a class="page-scroll" href="#header">Home</a></li>
