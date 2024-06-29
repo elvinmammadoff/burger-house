@@ -1,6 +1,6 @@
 /*********************************************************************************
 
-    Version: 1.4
+	Version: 1.4
 
     Note: This is scripts js. All custom scripts here.
 
@@ -9,19 +9,20 @@
 /*===============================================================================
 
     [ INDEX ]
-    |
+	|
     |___ Mobile Menu
     |___ Loading Overlay
     |___ AOS Animate
     |___ Banner Slider
     |___ Affix Navbar
-    |___ Datepicker
-    |___ Fancybox
-    |___ Scroll Up
+	|___ Datepicker
+	|___ Fancybox
+	|___ Scroll Up
     |___ Website Shaking on Scroll (specifically in Chrome)
+    |___ Yandex Map
     |___ 
     |
-    [END INDEX ]
+	[END INDEX ]
 
 ================================================================================*/
 
@@ -32,28 +33,28 @@
 
     //======= Mobile Menu Start ========
     //open left menu clicking the left menu icon
-    $('.left_menu_icon').on('click', function (event) {
+    $('.left_menu_icon').on('click', function(event){
         event.preventDefault();
         toggleLeftNav(true);
-        $("body").css({ 'overflow': 'hidden' });
+        $("body").css({'overflow':'hidden'});
     });
-
+    
     //open right menu clicking the right menu icon
-    $('.burger-menu-icon').on('click', function (event) {
+    $('.burger-menu-icon').on('click', function(event){
         event.preventDefault();
         toggleRightNav(true);
-        $("body").css({ 'overflow': 'hidden' });
+        $("body").css({'overflow':'hidden'});
     });
-
-    $('.cd-close-nav, .cd-overlay, .page-scroll').on('click', function (event) {
+    
+    $('.cd-close-nav, .cd-overlay, .page-scroll').on('click', function(event){
         event.preventDefault();
         toggleLeftNav(false);
         toggleRightNav(false);
-        $("body").css({ 'overflow': 'auto' });
+        $("body").css({'overflow':'auto'});
     });
 
     //select a new section
-    $('.cd-nav li').on('click', function () {
+    $('.cd-nav li').on('click', function(){
 
     });
 
@@ -70,9 +71,9 @@
 
 
     //======= Loading Overlay Start ========
-    setTimeout(function () {
-        $('body').addClass('loaded');
-    }, 9e3);
+    $(window).on('load', function () {
+        $('.loading-overlay').fadeOut(100);
+    });
     //======= Loading Overlay End ========
 
 
@@ -84,7 +85,7 @@
     });
     //======= AOS Animate End ========
 
-
+    
     //======= Page Scrolling Start ========
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function () {
@@ -103,13 +104,13 @@
     $('.banner-slider').slick({
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: true, 
         speed: 500,
         fade: false,
         cssEase: 'linear',
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnFocus: false,
+        pauseOnFocus: false, 
         pauseOnHover: false,
     });
     //======= Banner Slider End ========
@@ -125,11 +126,11 @@
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        pauseOnHover: false,
+        pauseOnHover:false,
         responsive: [
             {
                 breakpoint: 1160,
-                settings: {
+                 settings: {
                     centerMode: true,
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -137,13 +138,13 @@
             },
             {
                 breakpoint: 840,
-                settings: {
+                 settings: {
                     slidesToShow: 1,
                 }
             },
             {
                 breakpoint: 600,
-                settings: {
+                 settings: {
                     slidesToShow: 1,
                 }
             }
@@ -160,10 +161,10 @@
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        autoplay: false,
+		autoplay: false,
         autoplaySpeed: 3000,
         pauseOnFocus: false,
-        pauseOnHover: false,
+        pauseOnHover:false,
         variableWidth: false
     });
     //======= Events Slider End ========
@@ -174,7 +175,7 @@
         var scrollValue = $(window).scrollTop();
         if (scrollValue > 60) {
             $('.navbar').addClass('affix');
-        } else {
+        } else{
             $('.navbar').removeClass('affix');
         }
     });
@@ -182,17 +183,16 @@
 
 
     //======= Datepicker Start ========
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#reserv_date').datepicker();
     });
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#reserv_time').datetimepicker({
             format: 'LT',
         });
     });
     //======= Datepicker End ========
-
 
 
     //======= START Fancybox ========
@@ -204,7 +204,7 @@
         touch: false
     });
 
-    jQuery(document).ready(function ($) {
+    jQuery(document).ready(function($) {
         $('.fancybox')
             .fancybox({
                 beforeShow: function () {
@@ -230,24 +230,61 @@
 
 
     //======= Scroll Up Start ========
-    $(document).on('scroll', function () {
-        if ($(window).scrollTop() > 400) {
-            $('.scroll-up').addClass('show');
-        } else {
-            $('.scroll-up').removeClass('show');
-        }
-    });
+	$(document).on( 'scroll', function(){
+		if ($(window).scrollTop() > 400) {
+			$('.scroll-up').addClass('show');
+		} else {
+			$('.scroll-up').removeClass('show');
+		}
+	});
 
-    $('.scroll-up').on('click', scrollToTop);
-
-    function scrollToTop() {
-        var verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0,
-            element = $('body'),
-            offset = element.offset(),
-            offsetTop = offset.top;
-        $('html, body').animate({ scrollTop: offsetTop }, 500, 'linear');
+	$('.scroll-up').on('click', scrollToTop);
+	 
+	function scrollToTop() {
+		var verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0,
+		element = $('body'),
+		offset = element.offset(),
+		offsetTop = offset.top;
+		$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
     }
     //======= Scroll Up End ========
+
+
+    //======= START Yandex Map ========
+
+    ymaps.ready(init);
+    var myMap, 
+        myPlacemark;
+
+    var iconBase = 'src/assets/img/map-marker.png';
+    
+    function init(){ 
+        myMap = new ymaps.Map("map", {
+            center: [41.065434, 28.964260],
+            zoom: 13,
+    });
+    
+    myPlacemark = new ymaps.Placemark([41.065434, 28.964260], { 
+        // hintContent: 'Moscow!', 
+        // balloonContent: 'Capital of Russia'
+    },{
+        iconLayout: 'default#image',
+        iconImageHref: 'src/assets/img/map-marker.png',
+        iconImageSize: [26, 40],
+    });
+        
+        myMap.geoObjects.add(myPlacemark);
+        // myMap.controls.remove('zoomControl');
+        myMap.controls.remove('rulerControl');
+        myMap.controls.remove('geolocationControl');
+        myMap.controls.remove('searchControl');
+        myMap.controls.remove('trafficControl');
+        myMap.controls.remove('typeSelector');
+        myMap.controls.remove('fullscreenControl');
+        myMap.behaviors.disable('scrollZoom');
+    }
+
+    //======= END Yandex Map ========
 
 
     //======= Website Shaking on Scroll (specifically in Chrome) Start ========
@@ -255,7 +292,7 @@
     // window.addEventListener('touchmove', function (event) {
     //     event.preventDefault()
     // }, false)
-
+  
     // document.querySelector('.body-container').addEventListener('touchmove', function (event) {
     //     event.stopPropagation()
     // }, false)
