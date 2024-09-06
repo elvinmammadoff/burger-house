@@ -70,9 +70,9 @@
 
 
     //======= Loading Overlay Start ========
-    setTimeout(function () {
-        $('body').addClass('loaded');
-    }, 9e3);
+    $(window).on('load', function () {
+        $('.loading-overlay').fadeOut(100);
+    });
     //======= Loading Overlay End ========
 
 
