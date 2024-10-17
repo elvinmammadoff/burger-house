@@ -401,9 +401,13 @@
 
 <pre>
 
-  V. 1.2.1 – 17.10.2024
-  - New: Single Product page added;
+  V. 1.3.1 – 17.10.2024
+  - New: Home Page version 1 Single Product page added
   - Tweak: Updated Documentation
+
+  V. 1.2.1 – 29.06.2024
+  - New: Home page version 3 added
+  - Tweak: Improved Documentation
 
   V. 1.1.1 – 27.08.2023
   - New: Home page version 2 added;
