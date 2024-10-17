@@ -124,7 +124,7 @@
         draggable: true,
         dots: false,
         arrows: false,
-        focusOnSelect: true,
+        focusOnSelect: false,
         pauseOnHover: false,
         responsive: [
             {
