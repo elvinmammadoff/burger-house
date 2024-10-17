@@ -401,6 +401,10 @@
 
 <pre>
 
+  V. 1.2.1 – 17.10.2024
+  - New: Single Product page added;
+  - Tweak: Updated Documentation
+
   V. 1.1.1 – 27.08.2023
   - New: Home page version 2 added;
   - Added gallery section with Fancybox popup plugin to all versions
