@@ -1,0 +1,168 @@
+<div class="user-html user-html__with-lazy-load"><h3 id="item-description__burger-house-fast-food-and-restaurant-one-page-html-template"><strong>Burger House – Fast Food and Restaurant One Page HTML Template</strong></h3>
+<p><strong>Burger House</strong> – Bootstrap 4 based Fast Food and Restaurant One Page HTML Template. 
+Burger House is a clean, premium and modern HTML5 and CSS3 Template which can be used to create any site for multiple scenarios. 
+It’s perfect for any Restaurant, Cafe, Fast Food business and much more with all the required files to create your stunning website.
+<br><br>Looks good on all types of screens devices and platforms (Android, iOS and Windows). 
+This template is responsive on literally any screen size, this way you can worry less about interface, and focus on what is important. 
+Use Burger House, and create something amazing!
+<br><br>It has all the needed components for starting a brand new Restaurant, Cafe or redesigning your current website. 
+It also has a online reservation form which is more it can be used. 
+You can change all images and icons to make this template serve your business. 
+Well documented, very easy to customize &amp; does not require much knowledge of coding.</p>
+
+    <p><img src="https://camo.envatousercontent.com/45b2d62aa7c9dbcf579d3804331f87ef2d3afe8a/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f313363363936303461316638373732616338613531313535303165333133313237653436343561382f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637323631373436353265373036653637" alt="rate-us"></p>
+
+<h3 id="item-description__why-choose-burger-house">Why choose Burger House?</h3>
+<ul>
+<li>
+<strong>Completely Responsive Design</strong>
+<p>Optimized viewing on desktop, tablet and mobile devices.</p>
+</li>
+<li>
+<strong>Easy Customization</strong>
+<p>Customize each slide to meet your unique requirements and preferences.</p>
+</li>
+<li>
+<strong>Beautiful Appearance on Any Device</strong>
+<p>Great user experience on any screen size or resolution.</p>
+</li>
+<li>
+<strong>Advanced Animation Effects</strong>
+<p>Eye-catching transitions between slides.</p>
+</li>
+<li>
+<strong>Cross-Browser Compatibility</strong>
+<p>Seamless functionality on multiple browsers.</p>
+</li>
+<li>
+<strong>Fast Loading Speed</strong>
+<p>Optimized user experience with fast loading times.</p>
+</li>
+<li>
+<strong>User-Friendly Interface</strong>
+<p>Easy to use and navigate.</p>
+</li>
+</ul>
+<h3 id="item-description__other-features">Other Features</h3>
+<ul>
+<li>
+<strong>3+ Demo</strong> Variations. <a href="https://hburger.netlify.app/landing" rel="nofollow">Click to View Demo</a>
+</li>
+<li>Based on Bootstrap 4.5</li>
+<li>Fully Responsive Layout</li>
+<li>Validated Code HTML5, CSS3</li>
+<li>Fast Page Load</li>
+<li>User Friendly Code</li>
+<li>Mobile and Tablet Optimized</li>
+<li>W3C HTML valid code</li>
+<li>Pixel Perfect Design</li>
+<li>Easy Customizable</li>
+<li>Cross Browser compatibility</li>
+<li>Comfortable Mobile Navigation</li>
+<li>Fixed Header</li>
+<li>SEO Optimized</li>
+<li>Google Fonts</li>
+<li>Remix Icon</li>
+<li>Better Support (response within 24 hours)</li>
+<li>Free Regular Updates Template</li>
+<li>Detailed Documentation</li>
+</ul>
+<h3 id="item-description__files-included">Files Included</h3>
+<ul>
+<li>HTML File</li>
+<li>Supporting CSS Files</li>
+<li>Supporting JS Files</li>
+<li>Fonts in eot, svg, woff and ttf</li>
+<li>Images in PNG, GIF, SVG and JPG</li>
+<li>Image folder included files:
+<ul>
+<li>Fancybox plugin images (fancb folder)</li>
+<li>Favicon images (favicon folder)</li>
+<li>Logo</li>
+<li>Slider Background</li>
+<li>Map Marker</li>
+</ul>
+</li>
+<li>Documentation in HTML</li>
+</ul>
+<h3 id="item-description__3rd-party-libraries-used">3rd Party Libraries License</h3>
+<ul>
+<li>jQuery – <a href="https://jquery.com" rel="nofollow">jQuery</a>
+</li>
+<li>Bootstrap Framework – <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" rel="nofollow">Bootstrap 4.5</a>
+</li>
+<li>AOS – <a href="https://github.com/michalsnik/aos/tree/v2" rel="nofollow">AOS 2.3.4</a>
+</li>
+<li>Fancybox – <a href="http://fancybox.net" rel="nofollow">Fancybox</a>
+</li>
+<li>Slick Slider – <a href="https://kenwheeler.github.io/slick/" rel="nofollow">Slick Slider</a>
+</li>
+</ul>
+<h3 id="item-description__fonts-used">Fonts used:</h3>
+<ul>
+<li><a href="https://fonts.google.com/specimen/Open+Sans" rel="nofollow">Open Sans</a></li>
+<li><a href="https://fonts.google.com/specimen/Teko" rel="nofollow">Teko</a></li>
+<li><a href="https://fonts.google.com/specimen/Kanit" rel="nofollow">Kanit</a></li>
+</ul>
+<h3 id="item-description__images-license">Images License:</h3><p>Thank you so much to the artists and authors who gave their permission to use their amazing works! <strong>THANK YOU!</strong></p>
+<ul>
+<li>All images used are taken from <a href="https://pixabay.com/" rel="nofollow">Pixabay</a>. Pixabay is a vibrant community of authors, artists and creators sharing royalty-free images, video, audio and other media.
+</li>
+</ul>
+<h3 id="item-description__documentation">Documentation</h3>
+<a href="https://hburger.netlify.app/src/docs/" rel="nofollow">Check the docs here</a>
+<h3 id="item-description__customization-services">Important Note:</h3>
+<ul>
+<li>All images are just used for Preview Purpose Only. They are not part of the HTML templates and are not included in the final purchase files.</li>
+<li>Images and videos shown on our demo site are not part of the template download package due to licensing limitations and hence we are providing placeholder images with recommended image size mentioned in it.</li>
+<li>Any type of code or CSS customization and feature addition/change is not part of item support scope as per Envato item <a href="https://themeforest.net/page/item_support_policy?_ga=2.233764957.275401607.1701770067-503905489.1698934107">support policy</a>.</li>
+<li>Included a documentation file for full instruction.</li>
+</ul>
+<h3 id="item-description__sources-and-credits">Sources and Credits</h3>
+<p><strong>Please note: the images that can be seen in the preview will not be included in the download package. These are for preview purposes only.</strong> Full credits list you can see on this page <a href="https://hburger.netlify.app/src/docs/#credits" rel="nofollow">link</a></p>
+<h3 id="item-description__thank-you">Thank you:</h3><p>Thank you so much for using this template. Your comments and ratings would be much appreciated. Please don’t forget RATE for us.</p><p>If you purchase this template, you will get support. We will update this template time by time and we want to hear your wishes for the future updates or for complete new templates.
+</p><p>We are grateful to you.
+</p><p><strong>– Alissio –</strong></p>
+
+<h3 id="item-description__change-log">Change Log:</h3><pre>December 09, 2024: Burger House v3.4.2
+-----------------------------
+- Fixed: Loading Overlay fadeOut problem in Home v1
+- Fixed: UI problems ( Hero and other section height ) in Home v3
+- Fixed: AOS library bug ( Listener added for a 'DOMNodeRemoved' mutation event ) in all Home versions
+- Updated: AOS v2.3.4
+- Added: New scroll animation effects to all Home versions
+- Added: Favicon meta link to all Home versions
+- Tweak: Updated Documentation
+-----------------------------
+October 17, 2024: Burger House v3.3.1
+-----------------------------
+- New: Home Page version 1 Single Product page added
+- Tweak: Updated Documentation
+-----------------------------
+June 29, 2024: Burger House v3.2.1
+-----------------------------
+- New: Home page version 3 added
+- Tweak: Improved Documentation
+-----------------------------
+August 27, 2023: Burger House v2.1.1
+-----------------------------
+- New: Home page version 2 added;
+- Added gallery section with Fancybox popup plugin to all versions
+- Fixed: all validation errors and warnings
+- Tweak: Improved Documentation
+-----------------------------
+January 20, 2021: Burger House v1.0.0
+-----------------------------
+- Initial release
+</pre>
+
+<p>If you love our product, Don’t forget to rate it 5 stars</p>
+<p>
+<img src="https://camo.envatousercontent.com/2552f82161622264de550e01da1ae68280a25ffd/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f326539616164336261373134373739633938633639393563666635356239616337623564313039352f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637333734363137323265373036653637" alt="star">
+<img src="https://camo.envatousercontent.com/2552f82161622264de550e01da1ae68280a25ffd/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f326539616164336261373134373739633938633639393563666635356239616337623564313039352f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637333734363137323265373036653637" alt="star">
+<img src="https://camo.envatousercontent.com/2552f82161622264de550e01da1ae68280a25ffd/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f326539616164336261373134373739633938633639393563666635356239616337623564313039352f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637333734363137323265373036653637" alt="star">
+<img src="https://camo.envatousercontent.com/2552f82161622264de550e01da1ae68280a25ffd/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f326539616164336261373134373739633938633639393563666635356239616337623564313039352f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637333734363137323265373036653637" alt="star">
+<img src="https://camo.envatousercontent.com/2552f82161622264de550e01da1ae68280a25ffd/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f326539616164336261373134373739633938633639393563666635356239616337623564313039352f363837343734373037333361326632663635373337333666326437333663363936343635373232653665363537343663363936363739326536313730373032663733373236333266363936643637326637333734363137323265373036653637" alt="star"> 
+and let us know your feedback for a better update. Thank you
+<img src="https://camo.envatousercontent.com/365976edb905729e089028b8637d23e4020b88f8/68747470733a2f2f63616d6f2e656e7661746f75736572636f6e74656e742e636f6d2f646239386235646332373539366661323961313536636331333838653634353964656163306561372f3638373437343730373333613266326636353733373336663264373336633639363436353732326536653635373436633639363637393265363137303730326637333732363332663639366436373266373336643639366336353265373036653637" alt="happy">
+</p></div>
