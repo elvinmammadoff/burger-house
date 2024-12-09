@@ -251,41 +251,39 @@
     //======= Scroll Up End ========
 
 
-    //======= START Yandex Map ========
-
-    ymaps.ready(init);
-    var myMap, 
-        myPlacemark;
-
-    var iconBase = 'src/assets/img/map-marker.png';
-    
-    function init(){ 
-        myMap = new ymaps.Map("map", {
-            center: [41.065434, 28.964260],
-            zoom: 13,
-    });
-    
-    myPlacemark = new ymaps.Placemark([41.065434, 28.964260], { 
-        // hintContent: 'Moscow!', 
-        // balloonContent: 'Capital of Russia'
-    },{
-        iconLayout: 'default#image',
-        iconImageHref: 'src/assets/img/map-marker.png',
-        iconImageSize: [26, 40],
-    });
-        
-        myMap.geoObjects.add(myPlacemark);
-        // myMap.controls.remove('zoomControl');
-        myMap.controls.remove('rulerControl');
-        myMap.controls.remove('geolocationControl');
-        myMap.controls.remove('searchControl');
-        myMap.controls.remove('trafficControl');
-        myMap.controls.remove('typeSelector');
-        myMap.controls.remove('fullscreenControl');
-        myMap.behaviors.disable('scrollZoom');
-    }
-
-    //======= END Yandex Map ========
+    //======= Product Slider Start ========
+    $('.videos-slider-2').slick({
+        autoplay: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: false,
+        dots: false,
+        asNavFor: '.slider-nav-thumbnails',
+      });
+      
+      $('.slider-nav-thumbnails').slick({
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.videos-slider-2',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+      
+      // Remove active class from all thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+      
+      // Set active class to first thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+      
+      // On before slide change match active thumbnail to current slide
+      $('.videos-slider-2').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var mySlideNumber = nextSlide;
+        $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+        $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+      });
+      //======= Product Slider End ========
 
 
     //======= Website Shaking on Scroll (specifically in Chrome) Start ========

@@ -410,7 +410,7 @@
   - Tweak: Improved Documentation
 
   V. 1.1.1 – 27.08.2023
-  - New: Home page version 2 added;
+  - New: Home page version 2 added
   - Added gallery section with Fancybox popup plugin to all versions
   - Fixed: all validation errors and warnings
   - Tweak: Improved Documentation

@@ -124,7 +124,7 @@
         draggable: true,
         dots: false,
         arrows: false,
-        focusOnSelect: true,
+        focusOnSelect: false,
         pauseOnHover: false,
         responsive: [
             {
@@ -248,6 +248,41 @@
         $('html, body').animate({ scrollTop: offsetTop }, 500, 'linear');
     }
     //======= Scroll Up End ========
+
+
+    //======= Product Slider Start ========
+    $('.videos-slider-2').slick({
+        autoplay: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: false,
+        dots: false,
+        asNavFor: '.slider-nav-thumbnails',
+      });
+      
+      $('.slider-nav-thumbnails').slick({
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.videos-slider-2',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+      
+      // Remove active class from all thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+      
+      // Set active class to first thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+      
+      // On before slide change match active thumbnail to current slide
+      $('.videos-slider-2').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var mySlideNumber = nextSlide;
+        $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+        $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+      });
+      //======= Product Slider End ========
 
 
     //======= Website Shaking on Scroll (specifically in Chrome) Start ========
