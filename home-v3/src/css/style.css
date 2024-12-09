@@ -847,7 +847,6 @@ figure {
 }
 
 .section {
-    height: 100dvh;
     padding-top: 120px;
 }
 
@@ -3773,9 +3772,8 @@ footer.footer--black {
 }
 
 .Hero--index {
-    padding: 30px 0px;
+    padding: 130px 0 30px;
     background-color: #fff;
-    height: 100dvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3786,7 +3784,6 @@ footer.footer--black {
 
 .Hero {
     position: relative;
-    height: calc(100dvh - 23%);
     width: 100%;
 }
 
@@ -3795,11 +3792,6 @@ footer.footer--black {
 }
 
 .Hero__caption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

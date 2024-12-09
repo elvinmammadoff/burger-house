@@ -28,6 +28,7 @@ body {
 a,
 button {
     outline: 0 !important;
+    transition: all .3s ease-in;
 }
 a:hover,
 a:focus {
@@ -140,7 +141,7 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.9);
     z-index: -1;
 }
 .logo {
@@ -161,7 +162,7 @@ a:focus {
     line-height: 28px;
     font-family: 'Montserrat-Regular';
     margin-bottom: 25px;
-    max-width: 700px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
@@ -225,56 +226,44 @@ a:focus {
     display: block;
     text-align: center;
     background-size: contain;
-    box-shadow: 0 3px 12px 0 rgba(25,31,33,.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px 0 rgba(25,31,33,.1);
 }
 .demo-item:hover {
     z-index: 1;
 }
-/* .demo-item:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-.demo-item:hover:before {
-    opacity: 1;
-    visibility: visible;
-} */
 .demo-inner {
-    height: 600px;
+    height: 255px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    transition: background-position 6s linear;
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
 }
-/* .demo-inner:hover {
-    background-position: bottom;
-} */
 .demo-inner.page-1 {
-    background-image: url('https://s3.envato.com/files/402878318/02_Home.jpg');
+    background-image: url('../img/01_home.jpg');
 }
 .demo-inner.page-2 {
-    background-image: url('https://s3.envato.com/files/402878318/03_Home.jpg');
+    background-image: url('../img/02_home.jpg');
 }
 .demo-inner.page-3 {
-    background-image: url('https://poetic-pothos-84995b.netlify.app/landing/assets/img/03_home.jpg');
+    background-image: url('../img/03_home.jpg');
+}
+.demo-inner:hover {
+    transform: scale(1.1);
 }
 .demo-title {
     font-size: 26px;
     line-height: 32px;
-    font-family: 'Raleway-Black';
+    font-family: 'Montserrat-Bold';
     margin-bottom: 20px;
+    color: #252525;
+}
+.demo-title:hover {
+    color: #f6a525;
 }
 
 /*---------------------------------------- 
