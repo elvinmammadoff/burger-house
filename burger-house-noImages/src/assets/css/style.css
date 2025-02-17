@@ -82,7 +82,6 @@ body {
     line-height: 28px;
     font-weight: 400;
     color: #3d2514;
-    overflow-x: hidden;
     text-rendering: geometricPrecision
 }
 
@@ -1670,6 +1669,10 @@ footer:after {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center
+}
+
+#map {
+    height: 380px
 }
 
 

@@ -251,6 +251,43 @@
     //======= Scroll Up End ========
 
 
+    //======= START Yandex Map ========
+
+    ymaps.ready(init);
+    var myMap, 
+        myPlacemark;
+
+    var iconBase = 'src/assets/img/map-marker.png';
+    
+    function init(){ 
+        myMap = new ymaps.Map("map", {
+            center: [41.065434, 28.964260],
+            zoom: 13,
+    });
+    
+    myPlacemark = new ymaps.Placemark([41.065434, 28.964260], { 
+        // hintContent: 'Moscow!', 
+        // balloonContent: 'Capital of Russia'
+    },{
+        iconLayout: 'default#image',
+        iconImageHref: 'src/assets/img/map-marker.png',
+        iconImageSize: [26, 40],
+    });
+        
+        myMap.geoObjects.add(myPlacemark);
+        // myMap.controls.remove('zoomControl');
+        myMap.controls.remove('rulerControl');
+        myMap.controls.remove('geolocationControl');
+        myMap.controls.remove('searchControl');
+        myMap.controls.remove('trafficControl');
+        myMap.controls.remove('typeSelector');
+        myMap.controls.remove('fullscreenControl');
+        myMap.behaviors.disable('scrollZoom');
+    }
+
+    //======= END Yandex Map ========
+
+
     //======= Product Slider Start ========
     $('.videos-slider-2').slick({
         autoplay: true,
